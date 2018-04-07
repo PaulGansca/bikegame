@@ -14,6 +14,7 @@ import city.cs.engine.World;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import org.jbox2d.common.Vec2;
 
 /**
  *
@@ -40,7 +41,7 @@ public class MyView extends UserView {
         this.game = game; 
         
     }
-
+//TODO fix parallax scrolling
     @Override
     protected void paintBackground(Graphics2D g) {
         //System.out.println("paintBackground");
@@ -67,15 +68,14 @@ public class MyView extends UserView {
                 g.drawImage(life, 15+adjust, 0, this);
                 adjust = adjust+35;
             }
-        game.getLevel();
         // consider looop and count variable 
         g.drawString("Coins: " + bike.getCoinCount(), 0, 50);
         g.drawImage(coin, 50, 33, this);
         g.drawString("Bombs: " + bike.getBombCount(), 0, 80);
         g.drawImage(bomb, 58, 60, this);
-        if (bike.getCoinCount() < 11){
-            for (int i=0; i<bike.getFuelTank(); i++){
-                count = bike.getFuelTank();
+        if (game.getLevel() < 3){
+            for (int i=0; i<game.getPlayer().getFuelTank(); i++){
+                count = game.getPlayer().getFuelTank();
                 fuel = new ImageIcon("data/fuel"+ count + ".png").getImage();
                 g.drawImage(fuel, 470, 320, this);
             }

@@ -8,6 +8,7 @@ package game;
 import city.cs.engine.BodyImage;
 import city.cs.engine.PolygonShape;
 import city.cs.engine.Shape;
+import city.cs.engine.SoundClip;
 import city.cs.engine.Walker;
 import city.cs.engine.World;
 
@@ -21,6 +22,7 @@ public class Fuel extends Walker{
             0.66f, -0.13f,0.93f);
     private static final BodyImage fuel =
         new BodyImage("data/fuel.png", 3);
+    
     
     public Fuel(World world){
         super(world, shape);

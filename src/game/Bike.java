@@ -1,8 +1,11 @@
 package game;
 
 import city.cs.engine.*;
+import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 /**
  * Simple character
@@ -27,6 +30,7 @@ public class Bike extends Walker {
     private int fuelTank;
     private int lifeCount;
     private int bombCount;
+    private static SoundClip fuelSound;
 
     public Bike(World world) {
         super(world, bike);
@@ -55,12 +59,10 @@ public class Bike extends Walker {
     
     public void incrementCoinCount() {
         coinCount++;
-        System.out.println("Rich!  Coin count = " + coinCount);
     }
     
     public void bombUsed(){
         bombCount--;
-        System.out.println(bombCount+" bombs left");
     }
     
     public SolidFixture getRiderFixture(){
@@ -70,8 +72,8 @@ public class Bike extends Walker {
     public void fillTank(){
         if (fuelTank < 4){
             fuelTank++;
+            fuelSound.play();
         }
-        System.out.println("Fuel is now at " + fuelTank + "/4");
     }
     public void fuelConsumption() {
         if (fuelTank < 1){
@@ -79,7 +81,6 @@ public class Bike extends Walker {
             //System.exit(0);
         }
         fuelTank--;
-        System.out.println("Fuel " + fuelTank);
         
     }
         
@@ -87,10 +88,9 @@ public class Bike extends Walker {
     public void decreaseLife(){
         if (lifeCount > 1){
             lifeCount--;
-            System.out.println("Lost 1 life, current lifes" + lifeCount);
         } else{
             System.out.println("GAME OVER!");
-            System.exit(0);
+            //System.exit(0);
         }
     }
     
@@ -109,9 +109,15 @@ public class Bike extends Walker {
 
     public void setFuelTank(int cnt) {
         fuelTank = cnt;
-        System.out.println(fuelTank + " fuel");
     }
-    
-    
+    static {
+        try {
+           fuelSound = new SoundClip("data/fillTank.wav");
+           
+         } catch (UnsupportedAudioFileException|IOException|LineUnavailableException e) {
+           System.out.println(e);
+         }        
+    }
+
     
 }

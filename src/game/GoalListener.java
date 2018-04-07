@@ -6,6 +6,9 @@
 package game;
 
 import city.cs.engine.*;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -23,7 +26,11 @@ public class GoalListener implements CollisionListener {
         Bike player = game.getPlayer();
         if (e.getOtherBody() == player && game.isCurrentLevelCompleted()) {
             System.out.println("Going to next level...");
-            game.goNextLevel();
+            try {
+                game.goNextLevel();
+            } catch (IOException ex) {
+                Logger.getLogger(GoalListener.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 }

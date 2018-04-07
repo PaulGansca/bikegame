@@ -1,6 +1,10 @@
 package game;
 
 import city.cs.engine.*;
+import java.awt.Color;
+import java.io.IOException;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import org.jbox2d.common.Vec2;
 
 /**
@@ -8,7 +12,8 @@ import org.jbox2d.common.Vec2;
  */
 public abstract class GameLevel extends World {
     private Bike player;
-    
+
+    private Game game;
     public Bike getPlayer() {
         return player;
     }
@@ -20,6 +25,7 @@ public abstract class GameLevel extends World {
      */
     public void populate(Game game) {
         player = new Bike(this);
+        this.game = game;
         //System.out.println("Bike");
         player.setPosition(startPosition());
         player.addCollisionListener(new Pickup(getPlayer()));
@@ -36,5 +42,26 @@ public abstract class GameLevel extends World {
     
     /** Is this level complete? */
     public abstract boolean isCompleted();
+    Shape groundShape = new BoxShape(5, 0.5f);
+    public void makePlatform(){
+            
+            Body ground = new DynamicBody(game.getWorld(), groundShape);
+            ground.setPosition(new Vec2(-36.5f, 9f));
+            ground.setFillColor(Color.RED);
+            SolidFixture groundFixture = new SolidFixture(ground, groundShape, 100);
+
+    }
+    
+    public void spawnFuel(){
+        for (float i = -60; i <76; i= i+45){
+            Body fuel = new Fuel(game.getWorld());
+            fuel.setPosition(new Vec2(i, 3f));
+            fuel.addCollisionListener(new Pickup(getPlayer()));
+        }
+    }
+
+
+    
+    //public void stopMusic();
     
 }
