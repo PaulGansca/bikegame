@@ -1,0 +1,2506 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..838458f[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m/dist/[m
+\ No newline at end of file[m
+[1mdiff --git a/build/built-jar.properties b/build/built-jar.properties[m
+[1mindex c2c6618..5f420aa 100644[m
+[1m--- a/build/built-jar.properties[m
+[1m+++ b/build/built-jar.properties[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-#Wed, 14 Mar 2018 00:52:37 +0000[m
+[32m+[m[32m#Sun, 18 Mar 2018 11:58:46 +0000[m
+ [m
+ [m
+ C\:\\Users\\Paul\ Gansca\\Desktop\\BikeGame=[m
+[1mdiff --git a/build/classes/PolygonEditor.class b/build/classes/PolygonEditor.class[m
+[1mindex 209e20d..cf4c026 100644[m
+Binary files a/build/classes/PolygonEditor.class and b/build/classes/PolygonEditor.class differ
+[1mdiff --git a/build/classes/fsm/FSM.class b/build/classes/fsm/FSM.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7eb9ed8[m
+Binary files /dev/null and b/build/classes/fsm/FSM.class differ
+[1mdiff --git a/build/classes/fsm/FSMState.class b/build/classes/fsm/FSMState.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0fd14f9[m
+Binary files /dev/null and b/build/classes/fsm/FSMState.class differ
+[1mdiff --git a/build/classes/game/Bike.class b/build/classes/game/Bike.class[m
+[1mindex c905df9..8069bd4 100644[m
+Binary files a/build/classes/game/Bike.class and b/build/classes/game/Bike.class differ
+[1mdiff --git a/build/classes/game/Blade.class b/build/classes/game/Blade.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d425d4f[m
+Binary files /dev/null and b/build/classes/game/Blade.class differ
+[1mdiff --git a/build/classes/game/Coin.class b/build/classes/game/Coin.class[m
+[1mindex b730299..80dabbf 100644[m
+Binary files a/build/classes/game/Coin.class and b/build/classes/game/Coin.class differ
+[1mdiff --git a/build/classes/game/ControlPanel$1.class b/build/classes/game/ControlPanel$1.class[m
+[1mindex f795614..6706e64 100644[m
+Binary files a/build/classes/game/ControlPanel$1.class and b/build/classes/game/ControlPanel$1.class differ
+[1mdiff --git a/build/classes/game/ControlPanel$2.class b/build/classes/game/ControlPanel$2.class[m
+[1mindex 31efbf2..31ec9ef 100644[m
+Binary files a/build/classes/game/ControlPanel$2.class and b/build/classes/game/ControlPanel$2.class differ
+[1mdiff --git a/build/classes/game/ControlPanel$3.class b/build/classes/game/ControlPanel$3.class[m
+[1mindex bb947b2..8652664 100644[m
+Binary files a/build/classes/game/ControlPanel$3.class and b/build/classes/game/ControlPanel$3.class differ
+[1mdiff --git a/build/classes/game/ControlPanel$4.class b/build/classes/game/ControlPanel$4.class[m
+[1mindex 10cc72d..db3e128 100644[m
+Binary files a/build/classes/game/ControlPanel$4.class and b/build/classes/game/ControlPanel$4.class differ
+[1mdiff --git a/build/classes/game/ControlPanel$5.class b/build/classes/game/ControlPanel$5.class[m
+[1mindex 7933372..7b04211 100644[m
+Binary files a/build/classes/game/ControlPanel$5.class and b/build/classes/game/ControlPanel$5.class differ
+[1mdiff --git a/build/classes/game/ControlPanel$6.class b/build/classes/game/ControlPanel$6.class[m
+[1mindex f40b6a0..7b450cb 100644[m
+Binary files a/build/classes/game/ControlPanel$6.class and b/build/classes/game/ControlPanel$6.class differ
+[1mdiff --git a/build/classes/game/ControlPanel$7.class b/build/classes/game/ControlPanel$7.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a286649[m
+Binary files /dev/null and b/build/classes/game/ControlPanel$7.class differ
+[1mdiff --git a/build/classes/game/ControlPanel$8.class b/build/classes/game/ControlPanel$8.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..78ce9f4[m
+Binary files /dev/null and b/build/classes/game/ControlPanel$8.class differ
+[1mdiff --git a/build/classes/game/ControlPanel.class b/build/classes/game/ControlPanel.class[m
+[1mindex d296eea..562fd05 100644[m
+Binary files a/build/classes/game/ControlPanel.class and b/build/classes/game/ControlPanel.class differ
+[1mdiff --git a/build/classes/game/ControlPanel.form b/build/classes/game/ControlPanel.form[m
+[1mindex ed66a4b..f67cba5 100644[m
+[1m--- a/build/classes/game/ControlPanel.form[m
+[1m+++ b/build/classes/game/ControlPanel.form[m
+[36m@@ -4,6 +4,29 @@[m
+   <NonVisualComponents>[m
+     <Component class="javax.swing.JProgressBar" name="jProgressBar3">[m
+     </Component>[m
+[32m+[m[32m    <Component class="javax.swing.JTextField" name="jTextField1">[m
+[32m+[m[32m      <Properties>[m
+[32m+[m[32m        <Property name="text" type="java.lang.String" value="jTextField1"/>[m
+[32m+[m[32m      </Properties>[m
+[32m+[m[32m    </Component>[m
+[32m+[m[32m    <Container class="javax.swing.JDialog" name="jDialog1">[m
+[32m+[m[32m      <Events>[m
+[32m+[m[32m        <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="jDialog1WindowOpened"/>[m
+[32m+[m[32m      </Events>[m
+[32m+[m
+[32m+[m[32m      <Layout>[m
+[32m+[m[32m        <DimensionLayout dim="0">[m
+[32m+[m[32m          <Group type="103" groupAlignment="0" attributes="0">[m
+[32m+[m[32m              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>[m
+[32m+[m[32m          </Group>[m
+[32m+[m[32m        </DimensionLayout>[m
+[32m+[m[32m        <DimensionLayout dim="1">[m
+[32m+[m[32m          <Group type="103" groupAlignment="0" attributes="0">[m
+[32m+[m[32m              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>[m
+[32m+[m[32m          </Group>[m
+[32m+[m[32m        </DimensionLayout>[m
+[32m+[m[32m      </Layout>[m
+[32m+[m[32m    </Container>[m
+   </NonVisualComponents>[m
+   <AuxValues>[m
+     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>[m
+[36m@@ -21,14 +44,34 @@[m
+     <DimensionLayout dim="0">[m
+       <Group type="103" groupAlignment="0" attributes="0">[m
+           <Group type="102" attributes="0">[m
+[31m-              <EmptySpace max="-2" attributes="0"/>[m
+               <Group type="103" groupAlignment="0" attributes="0">[m
+[31m-                  <Component id="jButton1" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jButton2" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jButton3" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jComboBox1" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jProgressBar2" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m                  <Group type="102" attributes="0">[m
+[32m+[m[32m                      <EmptySpace max="-2" attributes="0"/>[m
+[32m+[m[32m                      <Group type="103" groupAlignment="0" attributes="0">[m
+[32m+[m[32m                          <Component id="jSlider1" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m                          <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>[m
+[32m+[m[32m                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m                          </Group>[m
+[32m+[m[32m                      </Group>[m
+[32m+[m[32m                  </Group>[m
+[32m+[m[32m                  <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>[m
+[32m+[m[32m                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m                  </Group>[m
+[32m+[m[32m                  <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>[m
+[32m+[m[32m                      <Component id="list1" min="-2" pref="144" max="-2" attributes="0"/>[m
+[32m+[m[32m                  </Group>[m
+[32m+[m[32m                  <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>[m
+[32m+[m[32m                      <Group type="103" groupAlignment="0" max="-2" attributes="0">[m
+[32m+[m[32m                          <Component id="jButton1" max="32767" attributes="0"/>[m
+[32m+[m[32m                          <Component id="jButton2" alignment="0" max="32767" attributes="0"/>[m
+[32m+[m[32m                          <Component id="jButton3" alignment="0" max="32767" attributes="0"/>[m
+[32m+[m[32m                          <Component id="jComboBox1" max="32767" attributes="0"/>[m
+[32m+[m[32m                      </Group>[m
+[32m+[m[32m                  </Group>[m
+               </Group>[m
+               <EmptySpace max="32767" attributes="0"/>[m
+           </Group>[m
+[36m@@ -37,19 +80,23 @@[m
+     <DimensionLayout dim="1">[m
+       <Group type="103" groupAlignment="0" attributes="0">[m
+           <Group type="102" alignment="0" attributes="0">[m
+[31m-              <EmptySpace max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>[m
+               <Component id="jButton1" min="-2" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace type="separate" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace type="unrelated" max="-2" attributes="0"/>[m
+               <Component id="jButton2" min="-2" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace type="separate" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace type="unrelated" max="-2" attributes="0"/>[m
+               <Component id="jButton3" min="-2" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>[m
+               <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>[m
+[31m-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>[m
+[32m+[m[32m              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace type="separate" max="-2" attributes="0"/>[m
+[32m+[m[32m              <Component id="jSlider1" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace type="separate" max="-2" attributes="0"/>[m
+[32m+[m[32m              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>[m
+               <EmptySpace max="-2" attributes="0"/>[m
+[31m-              <Component id="jProgressBar2" min="-2" pref="35" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace pref="45" max="32767" attributes="0"/>[m
+[32m+[m[32m              <Component id="list1" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace pref="25" max="32767" attributes="0"/>[m
+           </Group>[m
+       </Group>[m
+     </DimensionLayout>[m
+[36m@@ -97,16 +144,29 @@[m
+         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>[m
+       </AuxValues>[m
+     </Component>[m
+[31m-    <Component class="javax.swing.JProgressBar" name="jProgressBar2">[m
+[32m+[m[32m    <Component class="javax.swing.JLabel" name="jLabel8">[m
+[32m+[m[32m      <Properties>[m
+[32m+[m[32m        <Property name="text" type="java.lang.String" value="Set Gravity in Level 4"/>[m
+[32m+[m[32m      </Properties>[m
+[32m+[m[32m    </Component>[m
+[32m+[m[32m    <Component class="javax.swing.JSlider" name="jSlider1">[m
+       <Events>[m
+[31m-        <EventHandler event="componentRemoved" listener="java.awt.event.ContainerListener" parameters="java.awt.event.ContainerEvent" handler="jProgressBar2ComponentRemoved"/>[m
+[31m-        <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="jProgressBar2PropertyChange"/>[m
+[32m+[m[32m        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSlider1StateChanged"/>[m
+[32m+[m[32m        <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="jSlider1PropertyChange"/>[m
+       </Events>[m
+     </Component>[m
+[31m-    <Component class="javax.swing.JLabel" name="jLabel1">[m
+[32m+[m[32m    <Component class="javax.swing.JLabel" name="jLabel7">[m
+       <Properties>[m
+[31m-        <Property name="text" type="java.lang.String" value="Unlock goal"/>[m
+[32m+[m[32m        <Property name="text" type="java.lang.String" value="Hall Of Fame"/>[m
+       </Properties>[m
+     </Component>[m
+[32m+[m[32m    <Component class="java.awt.List" name="list1">[m
+[32m+[m[32m      <Events>[m
+[32m+[m[32m        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="list1ActionPerformed"/>[m
+[32m+[m[32m      </Events>[m
+[32m+[m[32m      <AuxValues>[m
+[32m+[m[32m        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="for (Player player : demo.getPlayerScores()){&#xa;            System.out.println(player);&#xa;            list1.add(player+&quot;&quot;);&#xa;}"/>[m
+[32m+[m[32m      </AuxValues>[m
+[32m+[m[32m    </Component>[m
+   </SubComponents>[m
+ </Form>[m
+[1mdiff --git a/build/classes/game/Controller.class b/build/classes/game/Controller.class[m
+[1mindex 90cdeaf..6c9b2a1 100644[m
+Binary files a/build/classes/game/Controller.class and b/build/classes/game/Controller.class differ
+[1mdiff --git a/build/classes/game/Elevator.class b/build/classes/game/Elevator.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d3d6640[m
+Binary files /dev/null and b/build/classes/game/Elevator.class differ
+[1mdiff --git a/build/classes/game/Fuel.class b/build/classes/game/Fuel.class[m
+[1mindex 096ec57..d6b8306 100644[m
+Binary files a/build/classes/game/Fuel.class and b/build/classes/game/Fuel.class differ
+[1mdiff --git a/build/classes/game/Game.class b/build/classes/game/Game.class[m
+[1mindex d4d8d62..c46991d 100644[m
+Binary files a/build/classes/game/Game.class and b/build/classes/game/Game.class differ
+[1mdiff --git a/build/classes/game/GameLevel.class b/build/classes/game/GameLevel.class[m
+[1mindex 69afe88..50c7dc3 100644[m
+Binary files a/build/classes/game/GameLevel.class and b/build/classes/game/GameLevel.class differ
+[1mdiff --git a/build/classes/game/GoalListener.class b/build/classes/game/GoalListener.class[m
+[1mindex 3c2ebd7..2faa265 100644[m
+Binary files a/build/classes/game/GoalListener.class and b/build/classes/game/GoalListener.class differ
+[1mdiff --git a/build/classes/game/HighScoreReader.class b/build/classes/game/HighScoreReader.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e43e7c8[m
+Binary files /dev/null and b/build/classes/game/HighScoreReader.class differ
+[1mdiff --git a/build/classes/game/HighScoreWriter.class b/build/classes/game/HighScoreWriter.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5a6a694[m
+Binary files /dev/null and b/build/classes/game/HighScoreWriter.class differ
+[1mdiff --git a/build/classes/game/Level1.class b/build/classes/game/Level1.class[m
+[1mindex c2e88a9..289e09e 100644[m
+Binary files a/build/classes/game/Level1.class and b/build/classes/game/Level1.class differ
+[1mdiff --git a/build/classes/game/Level2.class b/build/classes/game/Level2.class[m
+[1mindex 90079f3..5eaea0b 100644[m
+Binary files a/build/classes/game/Level2.class and b/build/classes/game/Level2.class differ
+[1mdiff --git a/build/classes/game/Level3.class b/build/classes/game/Level3.class[m
+[1mindex 863ef3c..3dc530b 100644[m
+Binary files a/build/classes/game/Level3.class and b/build/classes/game/Level3.class differ
+[1mdiff --git a/build/classes/game/Level4.class b/build/classes/game/Level4.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f6f59d8[m
+Binary files /dev/null and b/build/classes/game/Level4.class differ
+[1mdiff --git a/build/classes/game/MouseTest.class b/build/classes/game/MouseTest.class[m
+[1mdeleted file mode 100644[m
+[1mindex 06ecb8f..0000000[m
+Binary files a/build/classes/game/MouseTest.class and /dev/null differ
+[1mdiff --git a/build/classes/game/MyView.class b/build/classes/game/MyView.class[m
+[1mindex 8b66b09..5517f97 100644[m
+Binary files a/build/classes/game/MyView.class and b/build/classes/game/MyView.class differ
+[1mdiff --git a/build/classes/game/Pickup.class b/build/classes/game/Pickup.class[m
+[1mindex 48f263f..622f324 100644[m
+Binary files a/build/classes/game/Pickup.class and b/build/classes/game/Pickup.class differ
+[1mdiff --git a/build/classes/game/Player.class b/build/classes/game/Player.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f86ba56[m
+Binary files /dev/null and b/build/classes/game/Player.class differ
+[1mdiff --git a/build/classes/game/RollLeftState.class b/build/classes/game/RollLeftState.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1e3faa4[m
+Binary files /dev/null and b/build/classes/game/RollLeftState.class differ
+[1mdiff --git a/build/classes/game/RollRightState.class b/build/classes/game/RollRightState.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9d4ad8e[m
+Binary files /dev/null and b/build/classes/game/RollRightState.class differ
+[1mdiff --git a/build/classes/game/ScoreComparator.class b/build/classes/game/ScoreComparator.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..15e8bbd[m
+Binary files /dev/null and b/build/classes/game/ScoreComparator.class differ
+[1mdiff --git a/build/classes/game/Sensor.class b/build/classes/game/Sensor.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e82c6bb[m
+Binary files /dev/null and b/build/classes/game/Sensor.class differ
+[1mdiff --git a/build/classes/game/SpawnFuel.class b/build/classes/game/SpawnFuel.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3f70fd4[m
+Binary files /dev/null and b/build/classes/game/SpawnFuel.class differ
+[1mdiff --git a/build/classes/game/SpawnPlatform.class b/build/classes/game/SpawnPlatform.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5fb2944[m
+Binary files /dev/null and b/build/classes/game/SpawnPlatform.class differ
+[1mdiff --git a/build/classes/game/Spikes.class b/build/classes/game/Spikes.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6845bf5[m
+Binary files /dev/null and b/build/classes/game/Spikes.class differ
+[1mdiff --git a/build/classes/game/StandStillState.class b/build/classes/game/StandStillState.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f8a610c[m
+Binary files /dev/null and b/build/classes/game/StandStillState.class differ
+[1mdiff --git a/data/Track1.mp3 b/data/Track1.mp3[m
+[1mnew file mode 100644[m
+[1mindex 0000000..340e409[m
+Binary files /dev/null and b/data/Track1.mp3 differ
+[1mdiff --git a/data/Track2.mp3 b/data/Track2.mp3[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d6641cd[m
+Binary files /dev/null and b/data/Track2.mp3 differ
+[1mdiff --git a/data/Track3.mp3 b/data/Track3.mp3[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8dfc04a[m
+Binary files /dev/null and b/data/Track3.mp3 differ
+[1mdiff --git a/data/Track4.mp3 b/data/Track4.mp3[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd36dd5[m
+Binary files /dev/null and b/data/Track4.mp3 differ
+[1mdiff --git a/data/blade.png b/data/blade.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6aa1b0a[m
+Binary files /dev/null and b/data/blade.png differ
+[1mdiff --git a/data/coinSound.wav b/data/coinSound.wav[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b6a033b[m
+Binary files /dev/null and b/data/coinSound.wav differ
+[1mdiff --git a/data/desert1.png b/data/desert1.png[m
+[1mindex 20ffa9f..91304b3 100644[m
+Binary files a/data/desert1.png and b/data/desert1.png differ
+[1mdiff --git a/data/desert2.png b/data/desert2.png[m
+[1mindex 1120e33..c603f33 100644[m
+Binary files a/data/desert2.png and b/data/desert2.png differ
+[1mdiff --git a/data/desert3.png b/data/desert3.png[m
+[1mindex 9a8948a..4688597 100644[m
+Binary files a/data/desert3.png and b/data/desert3.png differ
+[1mdiff --git a/data/desert4.png b/data/desert4.png[m
+[1mindex df6f4a5..40313be 100644[m
+Binary files a/data/desert4.png and b/data/desert4.png differ
+[1mdiff --git a/data/elevator.png b/data/elevator.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..68393bf[m
+Binary files /dev/null and b/data/elevator.png differ
+[1mdiff --git a/data/engine.mp3 b/data/engine.mp3[m
+[1mnew file mode 100644[m
+[1mindex 0000000..37fd8a7[m
+Binary files /dev/null and b/data/engine.mp3 differ
+[1mdiff --git a/data/fillTank.wav b/data/fillTank.wav[m
+[1mnew file mode 100644[m
+[1mindex 0000000..35a255e[m
+Binary files /dev/null and b/data/fillTank.wav differ
+[1mdiff --git a/data/highscore.txt b/data/highscore.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/data/spikes.png b/data/spikes.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a0d61f9[m
+Binary files /dev/null and b/data/spikes.png differ
+[1mdiff --git a/data/warp.wav b/data/warp.wav[m
+[1mnew file mode 100644[m
+[1mindex 0000000..01281bf[m
+Binary files /dev/null and b/data/warp.wav differ
+[1mdiff --git a/dist.rar b/dist.rar[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7b819c5[m
+Binary files /dev/null and b/dist.rar differ
+[1mdiff --git a/highscore.txt b/highscore.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..41311e8[m
+[1m--- /dev/null[m
+[1m+++ b/highscore.txt[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m[32mPaul,25[m
+[32m+[m[32mPaul,35[m
+[32m+[m[32mVike,45[m
+[32m+[m[32mVike,45[m
+[32m+[m[32mVike,45[m
+[32m+[m[32mVike,45[m
+[32m+[m[32mBecali,5[m
+\ No newline at end of file[m
+[1mdiff --git a/nbproject/private/private.xml b/nbproject/private/private.xml[m
+[1mindex 6807a2b..85a6849 100644[m
+[1m--- a/nbproject/private/private.xml[m
+[1m+++ b/nbproject/private/private.xml[m
+[36m@@ -2,6 +2,17 @@[m
+ <project-private xmlns="http://www.netbeans.org/ns/project-private/1">[m
+     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>[m
+     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">[m
+[31m-        <group/>[m
+[32m+[m[32m        <group>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/HighScoreWriter.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/Bike.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/Fuel.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/ScoreComparator.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/Level2.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/Blade.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/Level1.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/HighScoreReader.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/ControlPanel.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/Paul%20Gansca/Desktop/BikeGame/src/game/Game.java</file>[m
+[32m+[m[32m        </group>[m
+     </open-files>[m
+ </project-private>[m
+[1mdiff --git a/nbproject/project.properties b/nbproject/project.properties[m
+[1mindex 982f9c3..a08dc9f 100644[m
+[1m--- a/nbproject/project.properties[m
+[1m+++ b/nbproject/project.properties[m
+[36m@@ -32,7 +32,8 @@[m [mexcludes=[m
+ includes=**[m
+ jar.compress=false[m
+ javac.classpath=\[m
+[31m-    ${libs.CityEngine.classpath}[m
+[32m+[m[32m    ${libs.CityEngine.classpath}:\[m
+[32m+[m[32m    ${libs.MP3.classpath}[m
+ # Space-separated list of extra javac options[m
+ javac.compilerargs=[m
+ javac.deprecation=false[m
+[1mdiff --git a/src/fsm/FSM.java b/src/fsm/FSM.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..aeb4d0f[m
+[1m--- /dev/null[m
+[1m+++ b/src/fsm/FSM.java[m
+[36m@@ -0,0 +1,79 @@[m
+[32m+[m[32mpackage fsm;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Finite State Machines (FSM).[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class FSM<T> {[m
+[32m+[m[41m    [m
+[32m+[m[32m    /** The current state. */[m
+[32m+[m[32m    private FSMState<T> state;[m
+[32m+[m[41m    [m
+[32m+[m[32m    /** The object being controlled by this FSM. */[m
+[32m+[m[32m    private final T context;[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Initialise a new FSM. Note that client code must invoke[m
+[32m+[m[32m     * start() on the FSM before any other methods.[m
+[32m+[m[32m     * @param context the object which will be controlled by this FSM[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public FSM(T context) {[m
+[32m+[m[32m        this.context = context;[m
+[32m+[m[32m        state = null;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Initialise a new FSM.[m
+[32m+[m[32m     * @param context the object which will be controlled by this FSM[m
+[32m+[m[32m     * @param state the initial state[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public FSM(T context, FSMState<T> state) {[m
+[32m+[m[32m        this.context = context;[m
+[32m+[m[32m        start(state);[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Put the FSM into its initial state.[m
+[32m+[m[32m     * @param state the initial state[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public void start(FSMState<T> state) {[m
+[32m+[m[32m        this.state = state;[m
+[32m+[m[32m        state.attach(this);[m
+[32m+[m[32m        state.enter();[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Invalidate the FSM by leaving the current state without entering[m
+[32m+[m[32m     * a new one.[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public void stop() {[m
+[32m+[m[32m        state.exit();[m
+[32m+[m[32m        state = null;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Call the update() method of the current state.[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public void update() {[m
+[32m+[m[32m        state.update();[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Make a transition to a new state.[m
+[32m+[m[32m     * @param newState the new state[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public void changeState(FSMState<T> newState) {[m
+[32m+[m[32m        state.exit();[m
+[32m+[m[32m        state = newState;[m
+[32m+[m[32m        state.attach(this);[m
+[32m+[m[32m        state.enter();[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * The object being controlled by this FSM.[m
+[32m+[m[32m     * @return the object being controlled by this FSM[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public T getContext() {[m
+[32m+[m[32m        return context;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/fsm/FSMState.java b/src/fsm/FSMState.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..828b5a7[m
+[1m--- /dev/null[m
+[1m+++ b/src/fsm/FSMState.java[m
+[36m@@ -0,0 +1,54 @@[m
+[32m+[m[32mpackage fsm;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * State objects for Finite State Machines (FSM).[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic abstract class FSMState<T> {[m
+[32m+[m[41m    [m
+[32m+[m[32m    /** The FSM to which this state belongs. */[m
+[32m+[m[32m    private FSM<T> fsm;[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Take actions (possibly including a state-transition) depending[m
+[32m+[m[32m     * on the current context of the FSM.[m[41m [m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected abstract void update();[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Take any actions necessary when the FSM makes a transition to this state[m
+[32m+[m[32m     * from a different state.[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected abstract void enter();[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Take any actions necessary when the FSM makes a transition from this[m
+[32m+[m[32m     * state to a different state.[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected abstract void exit();[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * The FSM context (the object being controlled by the FSM).[m
+[32m+[m[32m     * @return the FSM context[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected final T getContext() {[m
+[32m+[m[32m        return fsm.getContext();[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Make a transition to a new state.[m
+[32m+[m[32m     * @param newState the new state[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected final void gotoState(FSMState<T> newState) {[m
+[32m+[m[32m        fsm.changeState(newState);[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Attach this state to a FSM. This method is normally called[m
+[32m+[m[32m     * only by the FSM itself.[m
+[32m+[m[32m     * @param fsm the FSM[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected final void attach(FSM<T> fsm) {[m
+[32m+[m[32m        this.fsm = fsm;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/Bike.java b/src/game/Bike.java[m
+[1mindex 8dd7898..c2a5533 100644[m
+[1m--- a/src/game/Bike.java[m
+[1m+++ b/src/game/Bike.java[m
+[36m@@ -1,8 +1,11 @@[m
+ package game;[m
+ [m
+ import city.cs.engine.*;[m
+[32m+[m[32mimport java.io.IOException;[m
+ import java.util.logging.Level;[m
+ import java.util.logging.Logger;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+ [m
+ /**[m
+  * Simple character[m
+[36m@@ -27,6 +30,7 @@[m [mpublic class Bike extends Walker {[m
+     private int fuelTank;[m
+     private int lifeCount;[m
+     private int bombCount;[m
+[32m+[m[32m    private static SoundClip fuelSound;[m
+ [m
+     public Bike(World world) {[m
+         super(world, bike);[m
+[36m@@ -55,12 +59,10 @@[m [mpublic class Bike extends Walker {[m
+     [m
+     public void incrementCoinCount() {[m
+         coinCount++;[m
+[31m-        System.out.println("Rich!  Coin count = " + coinCount);[m
+     }[m
+     [m
+     public void bombUsed(){[m
+         bombCount--;[m
+[31m-        System.out.println(bombCount+" bombs left");[m
+     }[m
+     [m
+     public SolidFixture getRiderFixture(){[m
+[36m@@ -70,8 +72,8 @@[m [mpublic class Bike extends Walker {[m
+     public void fillTank(){[m
+         if (fuelTank < 4){[m
+             fuelTank++;[m
+[32m+[m[32m            fuelSound.play();[m
+         }[m
+[31m-        System.out.println("Fuel is now at " + fuelTank + "/4");[m
+     }[m
+     public void fuelConsumption() {[m
+         if (fuelTank < 1){[m
+[36m@@ -79,7 +81,6 @@[m [mpublic class Bike extends Walker {[m
+             //System.exit(0);[m
+         }[m
+         fuelTank--;[m
+[31m-        System.out.println("Fuel " + fuelTank);[m
+         [m
+     }[m
+         [m
+[36m@@ -87,10 +88,9 @@[m [mpublic class Bike extends Walker {[m
+     public void decreaseLife(){[m
+         if (lifeCount > 1){[m
+             lifeCount--;[m
+[31m-            System.out.println("Lost 1 life, current lifes" + lifeCount);[m
+         } else{[m
+             System.out.println("GAME OVER!");[m
+[31m-            System.exit(0);[m
+[32m+[m[32m            //System.exit(0);[m
+         }[m
+     }[m
+     [m
+[36m@@ -109,9 +109,15 @@[m [mpublic class Bike extends Walker {[m
+ [m
+     public void setFuelTank(int cnt) {[m
+         fuelTank = cnt;[m
+[31m-        System.out.println(fuelTank + " fuel");[m
+     }[m
+[31m-    [m
+[31m-    [m
+[32m+[m[32m    static {[m
+[32m+[m[32m        try {[m
+[32m+[m[32m           fuelSound = new SoundClip("data/fillTank.wav");[m
+[32m+[m[41m           [m
+[32m+[m[32m         } catch (UnsupportedAudioFileException|IOException|LineUnavailableException e) {[m
+[32m+[m[32m           System.out.println(e);[m
+[32m+[m[32m         }[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m
+     [m
+ }[m
+[1mdiff --git a/src/game/Blade.java b/src/game/Blade.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e8fdcd1[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/Blade.java[m
+[36m@@ -0,0 +1,65 @@[m
+[32m+[m[32m/*[m
+[32m+[m[32m * To change this license header, choose License Headers in Project Properties.[m
+[32m+[m[32m * To change this template file, choose Tools | Templates[m
+[32m+[m[32m * and open the template in the editor.[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport city.cs.engine.Body;[m
+[32m+[m[32mimport city.cs.engine.BodyImage;[m
+[32m+[m[32mimport city.cs.engine.DynamicBody;[m
+[32m+[m[32mimport city.cs.engine.PolygonShape;[m
+[32m+[m[32mimport city.cs.engine.Shape;[m
+[32m+[m[32mimport city.cs.engine.StepEvent;[m
+[32m+[m[32mimport city.cs.engine.StepListener;[m
+[32m+[m[32mimport city.cs.engine.Walker;[m
+[32m+[m[32mimport city.cs.engine.World;[m
+[32m+[m[32mimport fsm.FSM;[m
+[32m+[m[32m/**[m
+[32m+[m[32m *[m
+[32m+[m[32m * @author Paul Gansca[m
+[32m+[m[32m */[m
+[32m+[m[32m//TODO more FSM uses[m[41m [m
+[32m+[m[32mpublic class Blade extends Walker implements StepListener{[m
+[32m+[m[32m    private static final Shape blade = new PolygonShape(-0.25f[m
+[32m+[m[32m            ,1.49f, -1.23f,0.89f, -1.5f,-0.25f, -0.89f,-1.21f,[m
+[32m+[m[32m            0.23f,-1.41f, 1.2f,-0.85f, 1.45f,0.28f, 0.89f,1.22f);[m
+[32m+[m[41m    [m
+[32m+[m[32m    private static final BodyImage image =[m
+[32m+[m[32m        new BodyImage("data/blade.png", 3f);[m
+[32m+[m[41m    [m
+[32m+[m[32m    public static final float RANGE = 16;[m
+[32m+[m[32m    private Game game;[m
+[32m+[m[32m    private FSM<Blade> fsm;[m
+[32m+[m[32m    //different constructor from code[m
+[32m+[m[32m    public Blade(Game game) {[m
+[32m+[m[32m        super(game.getWorld(), blade);[m
+[32m+[m[32m        this.game = game;[m
+[32m+[m[32m        addImage(image);[m
+[32m+[m[32m        fsm = new FSM<Blade>(this, new StandStillState());[m
+[32m+[m[32m        getWorld().addStepListener(this);[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    public boolean inRangeLeft() {[m
+[32m+[m[32m        Bike a = game.getPlayer();[m
+[32m+[m[32m        float gap = getPosition().x - a.getPosition().x;[m
+[32m+[m[32m        return gap < RANGE && gap > 0;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    public boolean inRangeRight() {[m
+[32m+[m[32m        Bike a = game.getPlayer();[m
+[32m+[m[32m        float gap = getPosition().x - a.getPosition().x;[m
+[32m+[m[32m        return gap > -RANGE && gap < 0;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    public boolean inRange() {[m
+[32m+[m[32m        return inRangeLeft() || inRangeRight();[m
+[32m+[m[32m    }[m
+[32m+[m[41m        [m
+[32m+[m[32m    public void preStep(StepEvent e) {[m
+[32m+[m[32m        fsm.update();[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    public void postStep(StepEvent e) {}[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/Coin.java b/src/game/Coin.java[m
+[1mindex cb6661e..c574b98 100644[m
+[1m--- a/src/game/Coin.java[m
+[1m+++ b/src/game/Coin.java[m
+[36m@@ -4,6 +4,9 @@[m [mimport city.cs.engine.*;[m
+ import org.jbox2d.common.Vec2;[m
+ [m
+ import java.awt.Color;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+ [m
+ /**[m
+  *[m
+[36m@@ -20,9 +23,23 @@[m [mpublic class Coin extends DynamicBody {[m
+             -0.436f, 0.455f,-0.145f, 0.458f,0.106f, 0.152f,0.482f);[m
+     private static final BodyImage image =[m
+         new BodyImage("data/coins.gif", 1);[m
+[32m+[m[32m    private static SoundClip coinSound;[m
+     [m
+     public Coin(World world) {[m
+         super(world, shape);[m
+         addImage(image);[m
+     }[m
+[32m+[m[32m    static {[m
+[32m+[m[32m        try {[m
+[32m+[m[32m           coinSound = new SoundClip("data/coinSound.wav");[m
+[32m+[m[32m         } catch (UnsupportedAudioFileException|IOException|LineUnavailableException e) {[m
+[32m+[m[32m           System.out.println(e);[m
+[32m+[m[32m         }[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public void destroy()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        coinSound.play();[m
+[32m+[m[32m        super.destroy();[m
+[32m+[m[32m    }[m
+ }[m
+[1mdiff --git a/src/game/ControlPanel.form b/src/game/ControlPanel.form[m
+[1mindex ed66a4b..f67cba5 100644[m
+[1m--- a/src/game/ControlPanel.form[m
+[1m+++ b/src/game/ControlPanel.form[m
+[36m@@ -4,6 +4,29 @@[m
+   <NonVisualComponents>[m
+     <Component class="javax.swing.JProgressBar" name="jProgressBar3">[m
+     </Component>[m
+[32m+[m[32m    <Component class="javax.swing.JTextField" name="jTextField1">[m
+[32m+[m[32m      <Properties>[m
+[32m+[m[32m        <Property name="text" type="java.lang.String" value="jTextField1"/>[m
+[32m+[m[32m      </Properties>[m
+[32m+[m[32m    </Component>[m
+[32m+[m[32m    <Container class="javax.swing.JDialog" name="jDialog1">[m
+[32m+[m[32m      <Events>[m
+[32m+[m[32m        <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="jDialog1WindowOpened"/>[m
+[32m+[m[32m      </Events>[m
+[32m+[m
+[32m+[m[32m      <Layout>[m
+[32m+[m[32m        <DimensionLayout dim="0">[m
+[32m+[m[32m          <Group type="103" groupAlignment="0" attributes="0">[m
+[32m+[m[32m              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>[m
+[32m+[m[32m          </Group>[m
+[32m+[m[32m        </DimensionLayout>[m
+[32m+[m[32m        <DimensionLayout dim="1">[m
+[32m+[m[32m          <Group type="103" groupAlignment="0" attributes="0">[m
+[32m+[m[32m              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>[m
+[32m+[m[32m          </Group>[m
+[32m+[m[32m        </DimensionLayout>[m
+[32m+[m[32m      </Layout>[m
+[32m+[m[32m    </Container>[m
+   </NonVisualComponents>[m
+   <AuxValues>[m
+     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>[m
+[36m@@ -21,14 +44,34 @@[m
+     <DimensionLayout dim="0">[m
+       <Group type="103" groupAlignment="0" attributes="0">[m
+           <Group type="102" attributes="0">[m
+[31m-              <EmptySpace max="-2" attributes="0"/>[m
+               <Group type="103" groupAlignment="0" attributes="0">[m
+[31m-                  <Component id="jButton1" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jButton2" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jButton3" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jComboBox1" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jProgressBar2" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[31m-                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m                  <Group type="102" attributes="0">[m
+[32m+[m[32m                      <EmptySpace max="-2" attributes="0"/>[m
+[32m+[m[32m                      <Group type="103" groupAlignment="0" attributes="0">[m
+[32m+[m[32m                          <Component id="jSlider1" alignment="0" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m                          <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>[m
+[32m+[m[32m                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m                          </Group>[m
+[32m+[m[32m                      </Group>[m
+[32m+[m[32m                  </Group>[m
+[32m+[m[32m                  <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>[m
+[32m+[m[32m                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m                  </Group>[m
+[32m+[m[32m                  <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>[m
+[32m+[m[32m                      <Component id="list1" min="-2" pref="144" max="-2" attributes="0"/>[m
+[32m+[m[32m                  </Group>[m
+[32m+[m[32m                  <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>[m
+[32m+[m[32m                      <Group type="103" groupAlignment="0" max="-2" attributes="0">[m
+[32m+[m[32m                          <Component id="jButton1" max="32767" attributes="0"/>[m
+[32m+[m[32m                          <Component id="jButton2" alignment="0" max="32767" attributes="0"/>[m
+[32m+[m[32m                          <Component id="jButton3" alignment="0" max="32767" attributes="0"/>[m
+[32m+[m[32m                          <Component id="jComboBox1" max="32767" attributes="0"/>[m
+[32m+[m[32m                      </Group>[m
+[32m+[m[32m                  </Group>[m
+               </Group>[m
+               <EmptySpace max="32767" attributes="0"/>[m
+           </Group>[m
+[36m@@ -37,19 +80,23 @@[m
+     <DimensionLayout dim="1">[m
+       <Group type="103" groupAlignment="0" attributes="0">[m
+           <Group type="102" alignment="0" attributes="0">[m
+[31m-              <EmptySpace max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>[m
+               <Component id="jButton1" min="-2" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace type="separate" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace type="unrelated" max="-2" attributes="0"/>[m
+               <Component id="jButton2" min="-2" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace type="separate" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace type="unrelated" max="-2" attributes="0"/>[m
+               <Component id="jButton3" min="-2" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>[m
+               <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>[m
+[31m-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>[m
+[32m+[m[32m              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace type="separate" max="-2" attributes="0"/>[m
+[32m+[m[32m              <Component id="jSlider1" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace type="separate" max="-2" attributes="0"/>[m
+[32m+[m[32m              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>[m
+               <EmptySpace max="-2" attributes="0"/>[m
+[31m-              <Component id="jProgressBar2" min="-2" pref="35" max="-2" attributes="0"/>[m
+[31m-              <EmptySpace pref="45" max="32767" attributes="0"/>[m
+[32m+[m[32m              <Component id="list1" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace pref="25" max="32767" attributes="0"/>[m
+           </Group>[m
+       </Group>[m
+     </DimensionLayout>[m
+[36m@@ -97,16 +144,29 @@[m
+         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>[m
+       </AuxValues>[m
+     </Component>[m
+[31m-    <Component class="javax.swing.JProgressBar" name="jProgressBar2">[m
+[32m+[m[32m    <Component class="javax.swing.JLabel" name="jLabel8">[m
+[32m+[m[32m      <Properties>[m
+[32m+[m[32m        <Property name="text" type="java.lang.String" value="Set Gravity in Level 4"/>[m
+[32m+[m[32m      </Properties>[m
+[32m+[m[32m    </Component>[m
+[32m+[m[32m    <Component class="javax.swing.JSlider" name="jSlider1">[m
+       <Events>[m
+[31m-        <EventHandler event="componentRemoved" listener="java.awt.event.ContainerListener" parameters="java.awt.event.ContainerEvent" handler="jProgressBar2ComponentRemoved"/>[m
+[31m-        <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="jProgressBar2PropertyChange"/>[m
+[32m+[m[32m        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSlider1StateChanged"/>[m
+[32m+[m[32m        <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="jSlider1PropertyChange"/>[m
+       </Events>[m
+     </Component>[m
+[31m-    <Component class="javax.swing.JLabel" name="jLabel1">[m
+[32m+[m[32m    <Component class="javax.swing.JLabel" name="jLabel7">[m
+       <Properties>[m
+[31m-        <Property name="text" type="java.lang.String" value="Unlock goal"/>[m
+[32m+[m[32m        <Property name="text" type="java.lang.String" value="Hall Of Fame"/>[m
+       </Properties>[m
+     </Component>[m
+[32m+[m[32m    <Component class="java.awt.List" name="list1">[m
+[32m+[m[32m      <Events>[m
+[32m+[m[32m        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="list1ActionPerformed"/>[m
+[32m+[m[32m      </Events>[m
+[32m+[m[32m      <AuxValues>[m
+[32m+[m[32m        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="for (Player player : demo.getPlayerScores()){&#xa;            System.out.println(player);&#xa;            list1.add(player+&quot;&quot;);&#xa;}"/>[m
+[32m+[m[32m      </AuxValues>[m
+[32m+[m[32m    </Component>[m
+   </SubComponents>[m
+ </Form>[m
+[1mdiff --git a/src/game/ControlPanel.java b/src/game/ControlPanel.java[m
+[1mindex f8d46a8..b077b81 100644[m
+[1m--- a/src/game/ControlPanel.java[m
+[1m+++ b/src/game/ControlPanel.java[m
+[36m@@ -5,6 +5,14 @@[m
+  */[m
+ package game;[m
+ [m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.LinkedHashSet;[m
+[32m+[m[32mimport java.util.logging.Level;[m
+[32m+[m[32mimport java.util.logging.Logger;[m
+[32m+[m[32mimport static javax.swing.JOptionPane.showInputDialog;[m
+[32m+[m[32mimport javax.swing.JSlider;[m
+[32m+[m
+ /**[m
+  *[m
+  * @author Paul Gansca[m
+[36m@@ -12,14 +20,27 @@[m [mpackage game;[m
+ public class ControlPanel extends javax.swing.JPanel {[m
+ [m
+     private Game game;[m
+[32m+[m[32m    private HighScoreReader demo;[m
+[32m+[m[32m    private ArrayList<Player> playerScores1;[m
+     /**[m
+      * Creates new form CotrolPanel[m
+      */[m
+     public ControlPanel(Game game) {[m
+[31m-        initComponents();[m
+[32m+[m[32m        demo = new HighScoreReader("highscore.txt");[m
+[32m+[m[32m        try {[m
+[32m+[m[32m            demo.readScores();[m
+[32m+[m[32m        } catch (IOException ex) {[m
+[32m+[m[32m            Logger.getLogger(ControlPanel.class.getName()).log(Level.SEVERE, null, ex);[m
+[32m+[m[32m        }[m
+         this.game = game;[m
+[32m+[m[41m        [m
+[32m+[m[32m        playerScores1 = demo.getPlayerScores();[m
+[32m+[m[41m        [m
+[32m+[m[32m        initComponents();[m
+     }[m
+ [m
+[32m+[m
+[32m+[m
+     /**[m
+      * This method is called from within the constructor to initialize the form.[m
+      * WARNING: Do NOT modify this code. The content of this method is always[m
+[36m@@ -30,12 +51,39 @@[m [mpublic class ControlPanel extends javax.swing.JPanel {[m
+     private void initComponents() {[m
+ [m
+         jProgressBar3 = new javax.swing.JProgressBar();[m
+[32m+[m[32m        jTextField1 = new javax.swing.JTextField();[m
+[32m+[m[32m        jDialog1 = new javax.swing.JDialog();[m
+         jButton1 = new javax.swing.JButton();[m
+         jButton2 = new javax.swing.JButton();[m
+         jButton3 = new javax.swing.JButton();[m
+         jComboBox1 = new javax.swing.JComboBox<>();[m
+[31m-        jProgressBar2 = new javax.swing.JProgressBar();[m
+[31m-        jLabel1 = new javax.swing.JLabel();[m
+[32m+[m[32m        jLabel8 = new javax.swing.JLabel();[m
+[32m+[m[32m        jSlider1 = new javax.swing.JSlider();[m
+[32m+[m[32m        jLabel7 = new javax.swing.JLabel();[m
+[32m+[m[32m        list1 = new java.awt.List();[m
+[32m+[m[32m        for (Player player : demo.getPlayerScores()){[m
+[32m+[m[32m            System.out.println(player);[m
+[32m+[m[32m            list1.add(player+"");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        jTextField1.setText("jTextField1");[m
+[32m+[m
+[32m+[m[32m        jDialog1.addWindowListener(new java.awt.event.WindowAdapter() {[m
+[32m+[m[32m            public void windowOpened(java.awt.event.WindowEvent evt) {[m
+[32m+[m[32m                jDialog1WindowOpened(evt);[m
+[32m+[m[32m            }[m
+[32m+[m[32m        });[m
+[32m+[m
+[32m+[m[32m        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());[m
+[32m+[m[32m        jDialog1.getContentPane().setLayout(jDialog1Layout);[m
+[32m+[m[32m        jDialog1Layout.setHorizontalGroup([m
+[32m+[m[32m            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)[m
+[32m+[m[32m            .addGap(0, 400, Short.MAX_VALUE)[m
+[32m+[m[32m        );[m
+[32m+[m[32m        jDialog1Layout.setVerticalGroup([m
+[32m+[m[32m            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)[m
+[32m+[m[32m            .addGap(0, 300, Short.MAX_VALUE)[m
+[32m+[m[32m        );[m
+ [m
+         jButton1.setText("Restart");[m
+         jButton1.addActionListener(new java.awt.event.ActionListener() {[m
+[36m@@ -65,50 +113,75 @@[m [mpublic class ControlPanel extends javax.swing.JPanel {[m
+             }[m
+         });[m
+ [m
+[31m-        jProgressBar2.addContainerListener(new java.awt.event.ContainerAdapter() {[m
+[31m-            public void componentRemoved(java.awt.event.ContainerEvent evt) {[m
+[31m-                jProgressBar2ComponentRemoved(evt);[m
+[32m+[m[32m        jLabel8.setText("Set Gravity in Level 4");[m
+[32m+[m
+[32m+[m[32m        jSlider1.addChangeListener(new javax.swing.event.ChangeListener() {[m
+[32m+[m[32m            public void stateChanged(javax.swing.event.ChangeEvent evt) {[m
+[32m+[m[32m                jSlider1StateChanged(evt);[m
+             }[m
+         });[m
+[31m-        jProgressBar2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {[m
+[32m+[m[32m        jSlider1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {[m
+             public void propertyChange(java.beans.PropertyChangeEvent evt) {[m
+[31m-                jProgressBar2PropertyChange(evt);[m
+[32m+[m[32m                jSlider1PropertyChange(evt);[m
+             }[m
+         });[m
+ [m
+[31m-        jLabel1.setText("Unlock goal");[m
+[32m+[m[32m        jLabel7.setText("Hall Of Fame");[m
+[32m+[m
+[32m+[m[32m        list1.addActionListener(new java.awt.event.ActionListener() {[m
+[32m+[m[32m            public void actionPerformed(java.awt.event.ActionEvent evt) {[m
+[32m+[m[32m                list1ActionPerformed(evt);[m
+[32m+[m[32m            }[m
+[32m+[m[32m        });[m
+ [m
+         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);[m
+         this.setLayout(layout);[m
+         layout.setHorizontalGroup([m
+             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)[m
+             .addGroup(layout.createSequentialGroup()[m
+[31m-                .addContainerGap()[m
+                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)[m
+[31m-                    .addComponent(jButton1)[m
+[31m-                    .addComponent(jButton2)[m
+[31m-                    .addComponent(jButton3)[m
+[31m-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)[m
+[31m-                    .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)[m
+[31m-                    .addComponent(jLabel1))[m
+[32m+[m[32m                    .addGroup(layout.createSequentialGroup()[m
+[32m+[m[32m                        .addContainerGap()[m
+[32m+[m[32m                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)[m
+[32m+[m[32m                            .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)[m
+[32m+[m[32m                            .addGroup(layout.createSequentialGroup()[m
+[32m+[m[32m                                .addGap(37, 37, 37)[m
+[32m+[m[32m                                .addComponent(jLabel8))))[m
+[32m+[m[32m                    .addGroup(layout.createSequentialGroup()[m
+[32m+[m[32m                        .addGap(60, 60, 60)[m
+[32m+[m[32m                        .addComponent(jLabel7))[m
+[32m+[m[32m                    .addGroup(layout.createSequentialGroup()[m
+[32m+[m[32m                        .addGap(29, 29, 29)[m
+[32m+[m[32m                        .addComponent(list1, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))[m
+[32m+[m[32m                    .addGroup(layout.createSequentialGroup()[m
+[32m+[m[32m                        .addGap(73, 73, 73)[m
+[32m+[m[32m                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)[m
+[32m+[m[32m                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)[m
+[32m+[m[32m                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)[m
+[32m+[m[32m                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)[m
+[32m+[m[32m                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))[m
+                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))[m
+         );[m
+         layout.setVerticalGroup([m
+             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)[m
+             .addGroup(layout.createSequentialGroup()[m
+[31m-                .addContainerGap()[m
+[31m-                .addComponent(jButton1)[m
+                 .addGap(18, 18, 18)[m
+[32m+[m[32m                .addComponent(jButton1)[m
+[32m+[m[32m                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)[m
+                 .addComponent(jButton2)[m
+[31m-                .addGap(18, 18, 18)[m
+[32m+[m[32m                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)[m
+                 .addComponent(jButton3)[m
+[31m-                .addGap(27, 27, 27)[m
+[32m+[m[32m                .addGap(12, 12, 12)[m
+                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)[m
+[31m-                .addGap(24, 24, 24)[m
+[31m-                .addComponent(jLabel1)[m
+[32m+[m[32m                .addGap(39, 39, 39)[m
+[32m+[m[32m                .addComponent(jLabel8)[m
+[32m+[m[32m                .addGap(18, 18, 18)[m
+[32m+[m[32m                .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)[m
+[32m+[m[32m                .addGap(18, 18, 18)[m
+[32m+[m[32m                .addComponent(jLabel7)[m
+                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)[m
+[31m-                .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)[m
+[31m-                .addContainerGap(45, Short.MAX_VALUE))[m
+[32m+[m[32m                .addComponent(list1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)[m
+[32m+[m[32m                .addContainerGap(25, Short.MAX_VALUE))[m
+         );[m
+     }// </editor-fold>//GEN-END:initComponents[m
+ [m
+[36m@@ -130,19 +203,43 @@[m [mpublic class ControlPanel extends javax.swing.JPanel {[m
+         System.out.println(itemText);[m
+         int result = Integer.parseInt(itemText)-1;[m
+         game.setLevel(result);[m
+[31m-        game.goNextLevel();[m
+[32m+[m[32m        try {[m
+[32m+[m[32m            game.goNextLevel();[m
+[32m+[m[32m        } catch (IOException ex) {[m
+[32m+[m[32m            Logger.getLogger(ControlPanel.class.getName()).log(Level.SEVERE, null, ex);[m
+[32m+[m[32m        }[m
+ [m
+ [m
+         [m
+     }//GEN-LAST:event_jComboBox1ActionPerformed[m
+ [m
+[31m-    private void jProgressBar2ComponentRemoved(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_jProgressBar2ComponentRemoved[m
+[32m+[m[32m    private void jSlider1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jSlider1PropertyChange[m
+[32m+[m[32m        // TODO add your handling code here:[m
+[32m+[m[32m    }//GEN-LAST:event_jSlider1PropertyChange[m
+[32m+[m
+[32m+[m[32m    private void jSlider1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider1StateChanged[m
+[32m+[m[32m        // TODO add your handling code here:[m
+[32m+[m[32m        if (game.getLevel() == 4){[m
+[32m+[m[32m        JSlider source = (JSlider)evt.getSource();[m
+[32m+[m[32m        if (!source.getValueIsAdjusting()) {[m
+[32m+[m[32m            float gravity = (float)source.getValue()/100;[m
+[32m+[m[32m            game.getPlayer().setGravityScale(gravity);[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }//GEN-LAST:event_jSlider1StateChanged[m
+[32m+[m
+[32m+[m[32m    private void list1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_list1ActionPerformed[m
+         // TODO add your handling code here:[m
+[31m-    }//GEN-LAST:event_jProgressBar2ComponentRemoved[m
+[32m+[m[32m    }//GEN-LAST:event_list1ActionPerformed[m
+ [m
+[31m-    private void jProgressBar2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jProgressBar2PropertyChange[m
+[32m+[m[32m    private void jDialog1WindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jDialog1WindowOpened[m
+         // TODO add your handling code here:[m
+[31m-    }//GEN-LAST:event_jProgressBar2PropertyChange[m
+[32m+[m[32m        for (Player player : demo.getPlayerScores()){[m
+[32m+[m[32m            System.out.println(player);[m
+[32m+[m[32m            list1.add(player+"");[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }//GEN-LAST:event_jDialog1WindowOpened[m
+ [m
+ [m
+     // Variables declaration - do not modify//GEN-BEGIN:variables[m
+[36m@@ -150,8 +247,12 @@[m [mpublic class ControlPanel extends javax.swing.JPanel {[m
+     private javax.swing.JButton jButton2;[m
+     private javax.swing.JButton jButton3;[m
+     private javax.swing.JComboBox<String> jComboBox1;[m
+[31m-    private javax.swing.JLabel jLabel1;[m
+[31m-    private javax.swing.JProgressBar jProgressBar2;[m
+[32m+[m[32m    private javax.swing.JDialog jDialog1;[m
+[32m+[m[32m    private javax.swing.JLabel jLabel7;[m
+[32m+[m[32m    private javax.swing.JLabel jLabel8;[m
+     private javax.swing.JProgressBar jProgressBar3;[m
+[32m+[m[32m    private javax.swing.JSlider jSlider1;[m
+[32m+[m[32m    private javax.swing.JTextField jTextField1;[m
+[32m+[m[32m    private java.awt.List list1;[m
+     // End of variables declaration//GEN-END:variables[m
+ }[m
+[1mdiff --git a/src/game/Controller.java b/src/game/Controller.java[m
+[1mindex c94097a..cb32bb3 100644[m
+[1m--- a/src/game/Controller.java[m
+[1m+++ b/src/game/Controller.java[m
+[36m@@ -4,6 +4,9 @@[m [mimport city.cs.engine.*;[m
+ import org.jbox2d.common.Vec2;[m
+ import java.awt.event.KeyAdapter;[m
+ import java.awt.event.KeyEvent;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+ [m
+ /**[m
+  * Key handler to control an Walker.[m
+[36m@@ -11,17 +14,26 @@[m [mimport java.awt.event.KeyEvent;[m
+ public class Controller extends KeyAdapter {[m
+     private static final float JUMPING_SPEED = 6;[m
+     private float WALKING_SPEED = 0;[m
+[31m-    private static final float ROTATION = 4.5f;[m
+[32m+[m[32m    private static final float ROTATION = 5.5f;[m
+[32m+[m[32m    private static SoundClip engine;[m
+     [m
+     private Walker body;[m
+     [m
+     public Controller(Walker body) {[m
+         this.body = body;[m
+[32m+[m[41m        [m
+     }[m
+     /**[m
+      * Handle key press events for walking and jumping.[m
+      * @param e description of the key event[m
+      */[m
+[32m+[m[32m    static {[m
+[32m+[m[32m        try {[m
+[32m+[m[32m           engine = new SoundClip("data/engine.mp3");[m
+[32m+[m[32m         } catch (UnsupportedAudioFileException|IOException|LineUnavailableException e) {[m
+[32m+[m[32m           System.out.println(e);[m
+[32m+[m[32m         }[m[41m        [m
+[32m+[m[32m        }[m
+     @Override[m
+     public void keyPressed(KeyEvent e) {[m
+         int code = e.getKeyCode();[m
+[36m@@ -55,12 +67,17 @@[m [mpublic class Controller extends KeyAdapter {[m
+     @Override[m
+     public void keyReleased(KeyEvent e) {[m
+         int code = e.getKeyCode();[m
+[32m+[m[32m        //engine.stop();[m
+         if (code == KeyEvent.VK_S) {[m
+             body.stopWalking();[m
+             WALKING_SPEED=0; // allows for proper direction when the body is at rest[m
+[32m+[m[32m            engine.play();[m
+[32m+[m[32m            engine.setVolume(0.2d);[m
+         } else if (code == KeyEvent.VK_W) {[m
+             body.stopWalking();[m
+             WALKING_SPEED=0;[m
+[32m+[m[32m            engine.play();[m
+[32m+[m[32m            engine.setVolume(0.2d);[m
+         }[m
+     }[m
+     public void setBody(Walker body) {[m
+[1mdiff --git a/src/game/Elevator.java b/src/game/Elevator.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cd5a864[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/Elevator.java[m
+[36m@@ -0,0 +1,31 @@[m
+[32m+[m[32m/*[m
+[32m+[m[32m * To change this license header, choose License Headers in Project Properties.[m
+[32m+[m[32m * To change this template file, choose Tools | Templates[m
+[32m+[m[32m * and open the template in the editor.[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport city.cs.engine.BodyImage;[m
+[32m+[m[32mimport city.cs.engine.PolygonShape;[m
+[32m+[m[32mimport city.cs.engine.Shape;[m
+[32m+[m[32mimport city.cs.engine.SolidFixture;[m
+[32m+[m[32mimport city.cs.engine.Walker;[m
+[32m+[m[32mimport city.cs.engine.World;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m *[m
+[32m+[m[32m * @author Paul Gansca[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class Elevator extends Walker {[m
+[32m+[m[41m    [m
+[32m+[m[32m    private static final Shape elevator = new PolygonShape([m
+[32m+[m[32m            -1.76f,0.84f, -1.78f,-0.14f, 1.45f,-0.13f, 1.47f,0.83f);[m
+[32m+[m[32m    SolidFixture elevatorFixture = new SolidFixture(this, elevator, 100);[m
+[32m+[m[32m    private static final BodyImage image =[m
+[32m+[m[32m        new BodyImage("data/elevator.png", 3f);[m
+[32m+[m
+[32m+[m[32m    public Elevator(World world) {[m
+[32m+[m[32m        super(world, elevator);[m
+[32m+[m[32m        addImage(image);[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/Fuel.java b/src/game/Fuel.java[m
+[1mindex 311185a..f24afd9 100644[m
+[1m--- a/src/game/Fuel.java[m
+[1m+++ b/src/game/Fuel.java[m
+[36m@@ -8,6 +8,7 @@[m [mpackage game;[m
+ import city.cs.engine.BodyImage;[m
+ import city.cs.engine.PolygonShape;[m
+ import city.cs.engine.Shape;[m
+[32m+[m[32mimport city.cs.engine.SoundClip;[m
+ import city.cs.engine.Walker;[m
+ import city.cs.engine.World;[m
+ [m
+[36m@@ -22,6 +23,7 @@[m [mpublic class Fuel extends Walker{[m
+     private static final BodyImage fuel =[m
+         new BodyImage("data/fuel.png", 3);[m
+     [m
+[32m+[m[41m    [m
+     public Fuel(World world){[m
+         super(world, shape);[m
+         addImage(fuel);[m
+[1mdiff --git a/src/game/Game.java b/src/game/Game.java[m
+[1mindex 83328e5..c8efdc3 100644[m
+[1m--- a/src/game/Game.java[m
+[1m+++ b/src/game/Game.java[m
+[36m@@ -3,13 +3,18 @@[m [mpackage game;[m
+ import city.cs.engine.*;[m
+ import java.awt.BorderLayout;[m
+ import java.awt.Container;[m
+[32m+[m[32mimport java.io.IOException;[m
+ import java.util.TimerTask;[m
+ import java.util.logging.Level;[m
+ import java.util.logging.Logger;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+ [m
+ [m
+ import javax.swing.JFrame;[m
+[32m+[m[32mimport static javax.swing.JOptionPane.showInputDialog;[m
+ import javax.swing.Timer;[m
+[32m+[m[32mimport org.jbox2d.common.Vec2;[m
+ [m
+ [m
+ /**[m
+[36m@@ -28,24 +33,39 @@[m [mpublic class Game {[m
+     private Controller controller;[m
+     private Timer timer;[m
+     private Game game;[m
+[32m+[m[32m    private Timer spawner;[m
+[32m+[m[32m    private Timer spawnFuel;[m
+ [m
+     private DropBomb dropBomb;[m
+[32m+[m[32m    private HighScoreReader demo;[m
+[32m+[m[32m    private HighScoreWriter hsWriter;[m
+[32m+[m[32m    private SoundClip gameMusic;[m
+[32m+[m[32m    private static SoundClip warp;[m
+[32m+[m[32m    private String username;[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+     /** Initialise a new Game. */[m
+     public Game() {[m
+[31m-[m
+[32m+[m[32m        username = "";[m
+[32m+[m[32m        while (username.isEmpty()){[m
+[32m+[m[32m            username = showInputDialog(null, "Player name:");[m
+[32m+[m[32m        }[m
+         // make the world[m
+[32m+[m[41m              [m
+         level = 1;[m
+[31m-        this.game = game;[m
+         world = new Level1();[m
+         world.populate(this);[m
+[31m-        timer = new Timer(5000, new MyTimerTask(world.getPlayer()));[m
+[31m-        timer.start();[m
+[31m-        view = new MyView(world, 500, 500, getPlayer(), game);[m
+[31m-[m
+[32m+[m[32m        timer = new Timer(7000, new MyTimerTask(world.getPlayer()));[m
+[32m+[m[41m        [m
+[32m+[m[32m        spawner = new Timer(2000, new SpawnPlatform(world));[m
+[32m+[m[32m        spawnFuel = new Timer(10000, new SpawnFuel(world));[m
+[32m+[m[32m        view = new MyView(world, 500, 500, getPlayer(), this);[m
+[32m+[m[41m        [m
+         // make a view[m
+         // uncomment this to draw a 1-metre grid over the view[m
+         // view.setGridResolution(1);[m
+[31m-[m
+[32m+[m[32m        demo = new HighScoreReader("highscore.txt");[m
+[32m+[m[32m        hsWriter = new HighScoreWriter("highscore.txt");[m
+         // display the view in a frame[m
+         JFrame frame = new JFrame("Multi-level game");[m
+         Container buttons = new ControlPanel(this);[m
+[36m@@ -68,7 +88,6 @@[m [mpublic class Game {[m
+         frame.requestFocus();[m
+         // give keyboard focus to the frame whenever the mouse enters the view[m
+         view.addMouseListener(new GiveFocus(frame));[m
+[31m-        view.addMouseListener(new MouseTest());[m
+         dropBomb = new DropBomb(view, world.getPlayer());[m
+         view.addMouseListener(dropBomb);[m
+         [m
+[36m@@ -85,6 +104,9 @@[m [mpublic class Game {[m
+ [m
+         // start![m
+         world.start();[m
+[32m+[m[32m        timer.start();[m
+[32m+[m[32m        backgroundMusic();[m
+[32m+[m[41m        [m
+     }[m
+     [m
+     public void setLevel(int lvl){[m
+[36m@@ -98,78 +120,147 @@[m [mpublic class Game {[m
+     public Bike getPlayer(){[m
+         return world.getPlayer();[m
+     }[m
+[31m-    [m
+[32m+[m[41m        [m
+[32m+[m[32m    public GameLevel getWorld() {[m
+[32m+[m[32m        return world;[m
+[32m+[m[32m    }[m
+     [m
+     public void pause(){[m
+         world.stop();[m
+[32m+[m[32m        timer.stop();[m
+     }[m
+     [m
+     public void restart(){[m
+         world.start();[m
+[32m+[m[32m        if (level == 1){[m
+[32m+[m[32m            timer.start();[m
+[32m+[m[32m        }[m
+     }[m
+     [m
+     public boolean isCurrentLevelCompleted(){[m
+         return world.isCompleted();[m
+     }[m
+     [m
+[32m+[m[32m    static {[m
+[32m+[m[32m        try {[m
+[32m+[m[32m           warp = new SoundClip("data/warp.wav");[m
+[32m+[m[32m         } catch (UnsupportedAudioFileException|IOException|LineUnavailableException e) {[m
+[32m+[m[32m           System.out.println(e);[m
+[32m+[m[32m         }[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    public void backgroundMusic(){[m
+[32m+[m[32m        try {[m
+[32m+[m[32m            gameMusic = new SoundClip("data/Track" + getLevel() + ".mp3");   // Open an audio input stream[m
+[32m+[m[32m            gameMusic.play();  // Set it to continous playback (looping)[m
+[32m+[m[32m            gameMusic.setVolume(0.2d);[m
+[32m+[m[32m        } catch (UnsupportedAudioFileException|IOException|LineUnavailableException e) {[m
+[32m+[m[32m            System.out.println(e);[m
+[32m+[m[32m        }[m[41m  [m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+     [m
+     //advance to next level[m
+[31m-    public void goNextLevel(){[m
+[32m+[m[32m    public void goNextLevel() throws IOException{[m
+         world.stop();[m
+[32m+[m[32m        timer.stop();[m
+[32m+[m[32m        spawner.stop();[m
+[32m+[m[32m        spawnFuel.stop();[m
+[32m+[m[32m        demo.readScores();[m
+[32m+[m[32m        System.out.println(demo.getPlayerScores().size());[m
+         Bike oldBike = world.getPlayer();[m
+[31m-        [m
+[32m+[m[32m        gameMusic.stop();[m
+[32m+[m[32m        warp.play();[m
+         switch (level) {[m
+             case 4:[m
+                 System.exit(0);[m
+[32m+[m[32m                hsWriter.writeHighScore(username, world.getPlayer().getCoinCount());[m
+             case 0:[m
+                 level++;[m
+[31m-                timer.start();[m
+[32m+[m[32m                backgroundMusic();[m
+[32m+[m
+                 // get a new world[m
+                 world = new Level1();[m
+                 // fill it with bodies[m
+                 world.populate(this);[m
+                 // switch the keyboard control to the new player[m
+                 controller.setBody(world.getPlayer());[m
+[32m+[m[32m                world.getPlayer().setFuelTank(4);[m[41m                [m
+[32m+[m[32m                timer = new Timer(5000, new MyTimerTask(world.getPlayer()));[m
+[32m+[m[32m                timer.start();[m
+                 world.getPlayer().setCoinCount(oldBike.getCoinCount());[m
+                 world.getPlayer().setLifeCount(oldBike.getLifeCount());[m
+                 world.getPlayer().setBombCount(oldBike.getBombCount());[m
+                 // show the new world in the view[m
+                 view.setWorld(world);[m
+[31m-                wideView.setZoom(4);[m
+[32m+[m[41m                [m
+                 wideView.setWorld(world);[m
+[32m+[m[32m                wideView.setZoom(4);[m
+                 world.addStepListener(new Tracker(view, world.getPlayer()));[m
+                 world.start();[m
+                 break;[m
+             case 1:[m
+                 level++;[m
+                 timer.stop();[m
+[32m+[m[41m                [m
+[32m+[m[32m                spawnFuel.start();[m
+                 // get a new world[m
+                 world = new Level2();[m
+[32m+[m[32m                backgroundMusic();[m
+[32m+[m[32m                JFrame debugView = new DebugViewer(world, 500, 500);[m
+                 // fill it with bodies[m
+                 world.populate(this);[m
+                 // switch the keyboard control to the new player[m
+                 controller.setBody(world.getPlayer());[m
+[32m+[m[32m                world.getPlayer().setFuelTank(4);[m
+[32m+[m[32m                timer = new Timer(5000, new MyTimerTask(world.getPlayer()));[m
+[32m+[m[32m                timer.start();[m[41m               [m
+                 world.getPlayer().setCoinCount(oldBike.getCoinCount());[m
+                 world.getPlayer().setLifeCount(oldBike.getLifeCount());[m
+                 world.getPlayer().setBombCount(oldBike.getBombCount());[m
+                 // show the new world in the view[m
+                 view.setWorld(world);[m
+[31m-                wideView.setZoom(4);[m
+                 wideView.setWorld(world);[m
+[32m+[m[32m                wideView.setZoom(4);[m[41m    [m
+                 world.addStepListener(new Tracker(view, world.getPlayer()));[m
+                 world.start();[m
+                 break;[m
+             case 2:[m
+                 [m
+[32m+[m[32m                spawner.start();[m
+                 timer.stop();[m
+                 level++;[m
+[32m+[m[32m                backgroundMusic();[m
+                 // get a new world[m
+                 world = new Level3();[m
+                 // fill it with bodies[m
+                 world.populate(this);[m
+                 // switch the keyboard control to the new player[m
+                 controller.setBody(world.getPlayer());[m
+[32m+[m[32m                world.getPlayer().setCoinCount(oldBike.getCoinCount());[m
+[32m+[m[32m                world.getPlayer().setLifeCount(oldBike.getLifeCount());[m
+[32m+[m[32m                world.getPlayer().setBombCount(oldBike.getBombCount());[m
+[32m+[m[32m                // show the new world in the view[m
+[32m+[m[32m                view.setWorld(world);[m
+[32m+[m[41m                [m
+[32m+[m[32m                wideView.setWorld(world);[m
+[32m+[m[32m                wideView.setZoom(4);[m
+[32m+[m[32m                world.addStepListener(new Tracker(view, world.getPlayer()));[m
+[32m+[m[32m                world.start();[m
+[32m+[m[32m                break;[m
+[32m+[m[32m            case 3:[m
+[32m+[m[41m                [m
+[32m+[m[32m                timer.stop();[m
+[32m+[m[32m                level++;[m
+[32m+[m[32m                backgroundMusic();[m
+[32m+[m[32m                // get a new world[m
+[32m+[m[32m                world = new Level4();[m
+                 [m
+[32m+[m[32m                // fill it with bodies[m
+[32m+[m[32m                world.populate(this);[m
+[32m+[m[32m                // switch the keyboard control to the new player[m
+[32m+[m[32m                controller.setBody(world.getPlayer());[m
+[32m+[m[32m                //world.getPlayer().setGravityScale(0.1f);[m
+                 world.getPlayer().setCoinCount(oldBike.getCoinCount());[m
+                 world.getPlayer().setLifeCount(oldBike.getLifeCount());[m
+                 world.getPlayer().setBombCount(oldBike.getBombCount());[m
+[36m@@ -182,6 +273,7 @@[m [mpublic class Game {[m
+                 world.start();[m
+                 break;[m
+             default:[m
+[32m+[m[41m                [m
+                 break;            [m
+         }[m
+         ((MyView)view).setBike(world.getPlayer());[m
+[36m@@ -191,5 +283,6 @@[m [mpublic class Game {[m
+     /** Run the game. */[m
+     public static void main(String[] args) {[m
+         new Game();[m
+[32m+[m[32m        //TODO when game starts prompt dialog for name[m
+     }[m
+ }[m
+[1mdiff --git a/src/game/GameLevel.java b/src/game/GameLevel.java[m
+[1mindex 2b45048..18bdb7e 100644[m
+[1m--- a/src/game/GameLevel.java[m
+[1m+++ b/src/game/GameLevel.java[m
+[36m@@ -1,6 +1,10 @@[m
+ package game;[m
+ [m
+ import city.cs.engine.*;[m
+[32m+[m[32mimport java.awt.Color;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+ import org.jbox2d.common.Vec2;[m
+ [m
+ /**[m
+[36m@@ -8,7 +12,8 @@[m [mimport org.jbox2d.common.Vec2;[m
+  */[m
+ public abstract class GameLevel extends World {[m
+     private Bike player;[m
+[31m-    [m
+[32m+[m
+[32m+[m[32m    private Game game;[m
+     public Bike getPlayer() {[m
+         return player;[m
+     }[m
+[36m@@ -20,6 +25,7 @@[m [mpublic abstract class GameLevel extends World {[m
+      */[m
+     public void populate(Game game) {[m
+         player = new Bike(this);[m
+[32m+[m[32m        this.game = game;[m
+         //System.out.println("Bike");[m
+         player.setPosition(startPosition());[m
+         player.addCollisionListener(new Pickup(getPlayer()));[m
+[36m@@ -36,5 +42,26 @@[m [mpublic abstract class GameLevel extends World {[m
+     [m
+     /** Is this level complete? */[m
+     public abstract boolean isCompleted();[m
+[32m+[m[32m    Shape groundShape = new BoxShape(5, 0.5f);[m
+[32m+[m[32m    public void makePlatform(){[m
+[32m+[m[41m            [m
+[32m+[m[32m            Body ground = new DynamicBody(game.getWorld(), groundShape);[m
+[32m+[m[32m            ground.setPosition(new Vec2(-36.5f, 9f));[m
+[32m+[m[32m            ground.setFillColor(Color.RED);[m
+[32m+[m[32m            SolidFixture groundFixture = new SolidFixture(ground, groundShape, 100);[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    public void spawnFuel(){[m
+[32m+[m[32m        for (float i = -60; i <76; i= i+45){[m
+[32m+[m[32m            Body fuel = new Fuel(game.getWorld());[m
+[32m+[m[32m            fuel.setPosition(new Vec2(i, 3f));[m
+[32m+[m[32m            fuel.addCollisionListener(new Pickup(getPlayer()));[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m[32m    //public void stopMusic();[m
+     [m
+ }[m
+[1mdiff --git a/src/game/GoalListener.java b/src/game/GoalListener.java[m
+[1mindex a63c22b..6db97a6 100644[m
+[1m--- a/src/game/GoalListener.java[m
+[1m+++ b/src/game/GoalListener.java[m
+[36m@@ -6,6 +6,9 @@[m
+ package game;[m
+ [m
+ import city.cs.engine.*;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.logging.Level;[m
+[32m+[m[32mimport java.util.logging.Logger;[m
+ [m
+ /**[m
+  *[m
+[36m@@ -23,7 +26,11 @@[m [mpublic class GoalListener implements CollisionListener {[m
+         Bike player = game.getPlayer();[m
+         if (e.getOtherBody() == player && game.isCurrentLevelCompleted()) {[m
+             System.out.println("Going to next level...");[m
+[31m-            game.goNextLevel();[m
+[32m+[m[32m            try {[m
+[32m+[m[32m                game.goNextLevel();[m
+[32m+[m[32m            } catch (IOException ex) {[m
+[32m+[m[32m                Logger.getLogger(GoalListener.class.getName()).log(Level.SEVERE, null, ex);[m
+[32m+[m[32m            }[m
+         }[m
+     }[m
+ }[m
+[1mdiff --git a/src/game/HighScoreReader.java b/src/game/HighScoreReader.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fbc292a[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/HighScoreReader.java[m
+[36m@@ -0,0 +1,66 @@[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport java.io.FileReader;[m
+[32m+[m[32mimport java.io.BufferedReader;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.Arrays;[m
+[32m+[m[32mimport java.util.Collections;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Demonstrates how high-score data can be read from a text[m
+[32m+[m[32m * file and printed to the terminal.[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class HighScoreReader {[m
+[32m+[m
+[32m+[m[32m    private String fileName;[m
+[32m+[m[32m    public ArrayList<Player> playerScores;[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Initialise a new HighScoreReader[m
+[32m+[m[32m     * @param fileName the name of the high-score file[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public HighScoreReader(String fileName) {[m
+[32m+[m[32m        this.fileName = fileName;[m
+[32m+[m[32m        playerScores = new ArrayList<Player>();[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Read the high-score data from the high-score file and print it to[m
+[32m+[m[32m     * the terminal window.[m
+[32m+[m[32m     */[m
+[32m+[m[32m    //TODO read highscores in ascending order, list out only top 3[m
+[32m+[m[32m    public void readScores() throws IOException {[m
+[32m+[m[32m        FileReader fr = null;[m
+[32m+[m[32m        BufferedReader reader = null;[m
+[32m+[m[32m        try {[m
+[32m+[m[32m           // System.out.println("Reading " + fileName + " ...");[m
+[32m+[m[32m            fr = new FileReader(fileName);[m
+[32m+[m[32m            reader = new BufferedReader(fr);[m
+[32m+[m[32m            String line = reader.readLine();[m
+[32m+[m[32m            while (line != null) {[m
+[32m+[m[32m                // file is assumed to contain one name, score pair per line[m
+[32m+[m[32m                String[] tokens = line.split(",");[m
+[32m+[m[32m                String name = tokens[0];[m
+[32m+[m[32m                int score = Integer.parseInt(tokens[1]);[m
+[32m+[m[32m                playerScores.add(new Player(name, score));[m
+[32m+[m[32m                //System.out.println("Name: " + name + ", Score: " + score);[m
+[32m+[m[32m                line = reader.readLine();[m
+[32m+[m[32m            }[m
+[32m+[m[32m            Collections.sort(playerScores, new ScoreComparator());[m
+[32m+[m[32m            //System.out.println("...done.");[m[41m       [m
+[32m+[m[32m        } finally {[m
+[32m+[m[32m            if (reader != null) {[m
+[32m+[m[32m                reader.close();[m
+[32m+[m[32m            }[m
+[32m+[m[32m            if (fr != null) {[m
+[32m+[m[32m                fr.close();[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public ArrayList<Player> getPlayerScores() {[m
+[32m+[m[32m        return playerScores;[m
+[32m+[m[32m    }[m
+[32m+[m[41m        [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/HighScoreWriter.java b/src/game/HighScoreWriter.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..78ec692[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/HighScoreWriter.java[m
+[36m@@ -0,0 +1,30 @@[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport java.io.FileWriter;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Demonstrates how high-score data can be written to a text file.[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class HighScoreWriter {[m
+[32m+[m
+[32m+[m[32m    private String fileName;[m
+[32m+[m
+[32m+[m[32m    public HighScoreWriter(String fileName) {[m
+[32m+[m[32m        this.fileName = fileName;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public void writeHighScore(String name, int score) throws IOException {[m
+[32m+[m[32m        boolean append = true;[m
+[32m+[m[32m        FileWriter writer = null;[m
+[32m+[m[32m        try {[m
+[32m+[m[32m            writer = new FileWriter(fileName, append);[m
+[32m+[m[32m            writer.write(name + "," + score + "\n");[m
+[32m+[m[32m        } finally {[m
+[32m+[m[32m            if (writer != null) {[m
+[32m+[m[32m                writer.close();[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/Level1.java b/src/game/Level1.java[m
+[1mindex a0002d2..d37ebbc 100644[m
+[1m--- a/src/game/Level1.java[m
+[1m+++ b/src/game/Level1.java[m
+[36m@@ -10,9 +10,14 @@[m [mimport city.cs.engine.BoxShape;[m
+ import city.cs.engine.Fixture;[m
+ import city.cs.engine.Shape;[m
+ import city.cs.engine.SolidFixture;[m
+[32m+[m[32mimport city.cs.engine.SoundClip;[m
+ import city.cs.engine.StaticBody;[m
+ import city.cs.engine.UserView;[m
+[32m+[m[32mimport java.awt.Color;[m
+ import java.awt.Graphics2D;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+ import org.jbox2d.common.Vec2;[m
+ [m
+ /**[m
+[36m@@ -22,6 +27,7 @@[m [mimport org.jbox2d.common.Vec2;[m
+ public class Level1 extends GameLevel {[m
+     [m
+     private static final int NUM_ORANGES = 11;[m
+[32m+[m[32m    private static final int NUM_COINS = 5;[m
+     [m
+     public void populate (Game game) {[m
+         super.populate(game);[m
+[36m@@ -30,54 +36,70 @@[m [mpublic class Level1 extends GameLevel {[m
+         [m
+         Shape groundShape = new BoxShape(999, 0.5f);[m
+         Body ground = new StaticBody(this, groundShape);[m
+[31m-        ground.setPosition(new Vec2(0, -11.5f));[m
+[32m+[m[32m        ground.setPosition(new Vec2(0, -12f));[m
+         ground.addCollisionListener(new Pickup(getPlayer()));[m
+ [m
+         // walls[m
+[31m-        Shape leftWallShape = new BoxShape(0.5f, 6, new Vec2(-11.5f, 5.5f));[m
+[31m-        Fixture leftWall = new SolidFixture(ground, leftWallShape);[m
+[31m-[m
+[32m+[m[32m        Shape leftWallShape = new BoxShape(0.5f, 6, new Vec2(-69.5f, -5.5f));[m
+[32m+[m[32m        Body leftWall = new StaticBody(this, leftWallShape);[m
+[32m+[m[32m        leftWall.addCollisionListener(new Pickup(getPlayer()));[m
+[32m+[m[41m        [m
+[32m+[m[32m        Shape climbWallShape = new BoxShape(0.5f, 6, new Vec2(-58.5f, -5.5f));[m
+[32m+[m[32m        Body climbWall = new StaticBody(this, climbWallShape);[m
+[32m+[m[32m        climbWall.addCollisionListener(new Pickup(getPlayer()));[m
+         [m
+ [m
+         // make platforms[m
+[31m-        /*[m
+[32m+[m[32m        float spacing = -78.5f;[m
+[32m+[m[32m        float coinSpacing = -78.5f;[m
+[32m+[m[32m        int invariant = 0;[m
+[32m+[m[32m        Shape ramp = new BoxShape(8, 0.5f);[m
+[32m+[m[32m        Body platform1 = new StaticBody(this, ramp);[m
+[32m+[m[32m        platform1.setAngleDegrees(20);[m
+[32m+[m[32m        platform1.setPosition(new Vec2(-58.5f, 7.2f));[m
+[32m+[m[32m        platform1.addCollisionListener(new Pickup(getPlayer()));[m
+         Shape boxShape = new BoxShape(4, 0.5f);[m
+[31m-        Body platform1 = new StaticBody(this, boxShape);[m
+[31m-        platform1.setPosition(new Vec2(-7, 5.5f));[m
+[31m-        Body platform2 = new StaticBody(this, boxShape);[m
+[31m-        platform2.setPosition(new Vec2(5, -2.5f));[m
+[31m-*/[m
+[32m+[m[32m        while (spacing<80) {[m
+[32m+[m[32m            Body platform2 = new StaticBody(this, boxShape);[m
+[32m+[m[32m            platform2.setPosition(new Vec2(spacing, -2.5f));[m
+[32m+[m[32m            platform2.addCollisionListener(new Pickup(getPlayer()));[m
+[32m+[m[32m            spacing= spacing + 15;[m
+[32m+[m[32m            platform2.setFillColor(Color.DARK_GRAY);[m
+[32m+[m[32m        }[m
+[32m+[m
+ [m
+         [m
+[31m-        [m
+[31m-        for (int i = 0; i < NUM_ORANGES; i++) {[m
+[32m+[m[32m        while (invariant< NUM_ORANGES) {[m
+             Body coin = new Coin(this);[m
+[31m-            coin.setPosition(new Vec2(i*2-10, 10));[m
+[32m+[m[32m            coin.setPosition(new Vec2(coinSpacing, 10));[m
+             coin.addCollisionListener(new Pickup(getPlayer()));[m
+[31m-          [m
+[32m+[m[32m            coinSpacing = coinSpacing + 15;[m
+[32m+[m[32m            invariant++;[m[41m          [m
+         }[m
+         [m
+[31m-        Body fuel = new Fuel(this);[m
+[31m-        fuel.setPosition(new Vec2(0.5f, 3f));[m
+[31m-        fuel.addCollisionListener(new Pickup(getPlayer()));        [m
+[32m+[m[32m        for (float i = -80; i <80; i= i+30){[m
+[32m+[m[32m            Body fuel = new Fuel(this);[m
+[32m+[m[32m            fuel.setPosition(new Vec2(i, 3f));[m
+[32m+[m[32m            fuel.addCollisionListener(new Pickup(getPlayer()));[m
+[32m+[m[32m        }[m[41m        [m
+         [m
+     }[m
+     [m
+ [m
+     @Override[m
+     public Vec2 startPosition() {[m
+[31m-        return new Vec2(2, -5);[m
+[32m+[m[32m        return new Vec2(-80, -8);[m
+     }[m
+ [m
+     @Override[m
+     public Vec2 goalPosition() {[m
+[31m-        return new Vec2(-4f, -4f);[m
+[32m+[m[32m        return new Vec2(70f, -4f);[m
+     }[m
+ [m
+     @Override[m
+     public boolean isCompleted() {[m
+[31m-        return getPlayer().getCoinCount() >= NUM_ORANGES;[m
+[32m+[m[32m        return getPlayer().getCoinCount() >= NUM_COINS;[m
+     }[m
+[31m-       [m
+[32m+[m[41m    [m
+     [m
+ }[m
+[1mdiff --git a/src/game/Level2.java b/src/game/Level2.java[m
+[1mindex 7594011..444d7e8 100644[m
+[1m--- a/src/game/Level2.java[m
+[1m+++ b/src/game/Level2.java[m
+[36m@@ -1,6 +1,10 @@[m
+ package game;[m
+ [m
+ import city.cs.engine.*;[m
+[32m+[m[32mimport java.awt.Color;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+ import org.jbox2d.common.Vec2;[m
+ [m
+ /**[m
+[36m@@ -18,11 +22,12 @@[m [mpublic class Level2 extends GameLevel {[m
+         super.populate(game);[m
+ [m
+         // make the ground[m
+[31m-        Shape groundShape = new BoxShape(11, 0.5f);[m
+[32m+[m[32m        Shape groundShape = new BoxShape(999, 0.5f);[m
+         Body ground = new StaticBody(this, groundShape);[m
+         ground.setPosition(new Vec2(0, -11.5f));[m
+         [m
+         // walls[m
+[32m+[m[32m        /*[m
+         Shape leftWallShape = new BoxShape(0.5f, 6, new Vec2(-11.5f, 5.5f));[m
+         Fixture leftWall = new SolidFixture(ground, leftWallShape);[m
+         Shape rightWallShape = new BoxShape(0.5f, 6, new Vec2(11.5f, 5.5f));[m
+[36m@@ -30,33 +35,46 @@[m [mpublic class Level2 extends GameLevel {[m
+         [m
+ [m
+         // make some platforms[m
+[32m+[m
+         Shape platformShape = new BoxShape(4, 0.5f);[m
+         Body platform1 = new StaticBody(this, platformShape);[m
+         platform1.setPosition(new Vec2(-7, 5.5f));[m
+         Body platform2 = new StaticBody(this, platformShape);[m
+[31m-        platform2.setPosition(new Vec2(5, -2.5f));[m
+[31m-        [m
+[32m+[m[32m        platform2.setPosition(new Vec2(5, -2.5f)); */[m
+[32m+[m[32m        int spacing = -65;[m
+[32m+[m[32m        float difficulty = 0.2f;[m
+[32m+[m[32m        while (spacing<80) {[m
+[32m+[m[32m            Spikes spike = new Spikes(this);[m
+[32m+[m[32m            spike.setPosition(new Vec2(spacing, 8));[m
+[32m+[m[32m            spike.setGravityScale(3+difficulty);[m
+[32m+[m[32m            spike.spikeFixture.setRestitution(1);[m
+[32m+[m[32m            spike.addCollisionListener(new Pickup(getPlayer()));[m
+[32m+[m[32m            spacing= spacing + 15;[m
+[32m+[m[32m            difficulty=difficulty+0.2f;[m
+[32m+[m[32m        }[m
+ [m
+[31m-        for (int i = 0; i < NUM_ORANGES; i++) {[m
+[32m+[m
+[32m+[m[32m        for (int i = -70; i < 70; i=i+15) {[m
+             Body coin = new Coin(this);[m
+[31m-            coin.setPosition(new Vec2(i * 2 - 10, 10));[m
+[32m+[m[32m            coin.setPosition(new Vec2(i, 10));[m
+             coin.addCollisionListener(new Pickup(getPlayer()));[m
+         }[m
+     }[m
+ [m
+     @Override[m
+     public Vec2 startPosition() {[m
+[31m-        return new Vec2(8, -10);[m
+[32m+[m[32m        return new Vec2(-80, -10);[m
+     }[m
+ [m
+     @Override[m
+     public Vec2 goalPosition() {[m
+[31m-        return new Vec2(-10.4f, -9.6f);[m
+[32m+[m[32m        return new Vec2(82, -9.6f);[m
+     }[m
+ [m
+     @Override[m
+     public boolean isCompleted() {[m
+[31m-        return getPlayer().getCoinCount() > 4;[m
+[32m+[m[32m        return getPlayer().getCoinCount() > 15;[m
+     }[m
+     [m
+[32m+[m[41m    [m
+ }[m
+[1mdiff --git a/src/game/Level3.java b/src/game/Level3.java[m
+[1mindex 71b9df3..d9ddf6b 100644[m
+[1m--- a/src/game/Level3.java[m
+[1m+++ b/src/game/Level3.java[m
+[36m@@ -2,6 +2,10 @@[m [mpackage game;[m
+ [m
+ import city.cs.engine.*;[m
+ import java.awt.Color;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+[32m+[m[32mimport javax.swing.Timer;[m
+ import org.jbox2d.common.Vec2;[m
+ [m
+ /**[m
+[36m@@ -11,54 +15,73 @@[m [mpublic class Level3 extends GameLevel {[m
+ [m
+     private static final int NUM_ORANGES = 11;[m
+ [m
+[32m+[m[41m   [m
+[32m+[m
+     /**[m
+      * Populate the world.[m
+      */[m
+     @Override[m
+     public void populate(Game game) {[m
+[31m-        super.populate(game);[m
+[32m+[m[32m        super.populate(game);[m[41m    [m
+ [m
+[32m+[m[32m        //TODO redesign level 3 to make better use of FSM[m
+         // make the ground[m
+[31m-        Shape groundShape = new BoxShape(11, 0.5f);[m
+[32m+[m[32m        Shape groundShape = new BoxShape(40, 0.5f);[m
+         Body ground = new StaticBody(this, groundShape);[m
+[31m-        ground.setPosition(new Vec2(0, -11.5f));[m
+[32m+[m[32m        ground.setPosition(new Vec2(12, -11.5f));[m
+         [m
+[32m+[m[32m        Body ground2 = new StaticBody(this, groundShape);[m
+[32m+[m[32m        ground2.setPosition(new Vec2(-99, -11.5f));[m
+[32m+[m
+         // walls[m
+[31m-        Shape leftWallShape = new BoxShape(0.5f, 6, new Vec2(-11.5f, 5.5f));[m
+[31m-        Fixture leftWall = new SolidFixture(ground, leftWallShape);[m
+[31m-        Shape rightWallShape = new BoxShape(0.5f, 6, new Vec2(11.5f, 5.5f));[m
+[31m-        Fixture rightWall = new SolidFixture(ground, rightWallShape);[m
+[32m+[m[32m        Shape climbWallShape = new BoxShape(3.5f, 6, new Vec2(-46f, -6));[m
+[32m+[m[32m        Body climbWall = new StaticBody(this, climbWallShape);[m
+[32m+[m[32m        climbWall.addCollisionListener(new Pickup(getPlayer()));[m
+[32m+[m[32m        climbWall.setFillColor(Color.GREEN);[m
+[32m+[m[32m        Shape rightWallShape = new BoxShape(0.5f, 8, new Vec2(11.5f, 5.5f));[m
+[32m+[m[32m        Body rightWall = new StaticBody(this, rightWallShape);[m
+[32m+[m[32m        rightWall.setFillColor(Color.GREEN);[m
+[32m+[m[32m        rightWall.setPosition(new Vec2(4.5f, -12));[m
+         [m
+ [m
+         // make some platforms[m
+         Shape platformShape = new BoxShape(4, 0.5f);[m
+         Body platform1 = new StaticBody(this, platformShape);[m
+[31m-        platform1.setPosition(new Vec2(-7, 5.5f));[m
+[31m-        Body platform2 = new StaticBody(this, platformShape);[m
+[31m-        platform2.setPosition(new Vec2(5, -2.5f));[m
+[31m-        platform2.setFillColor(Color.yellow);[m
+[32m+[m[32m        platform1.setPosition(new Vec2(9, 0.5f));[m
+[32m+[m[32m        platform1.setFillColor(Color.GREEN);[m
+[32m+[m[41m        [m
+[32m+[m[32m        Blade blade1 = new Blade(game);[m
+[32m+[m[32m        blade1.setPosition(new Vec2(0, 0));[m
+         [m
+[32m+[m[32m        Blade blade2 = new Blade(game);[m
+[32m+[m[32m        blade2.setPosition(new Vec2(-90, 0));[m
+[32m+[m[41m        [m
+[32m+[m[32m        float spacing  = -90;[m
+ [m
+[31m-        for (int i = 0; i < NUM_ORANGES; i++) {[m
+[32m+[m[32m        for (float i = 2f; i < 10; i++) {[m
+             Body coin = new Coin(this);[m
+[31m-            coin.setPosition(new Vec2(i * 2 - 10, 10));[m
+[32m+[m[32m            coin.setPosition(new Vec2(i * 6.5f, 10));[m
+             coin.addCollisionListener(new Pickup(getPlayer()));[m
+         }[m
+     }[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+ [m
+     @Override[m
+     public Vec2 startPosition() {[m
+[31m-        return new Vec2(8, -10);[m
+[32m+[m[32m        return new Vec2(-75, -10);[m
+     }[m
+ [m
+     @Override[m
+     public Vec2 goalPosition() {[m
+[31m-        return new Vec2(-10.4f, -9.6f);[m
+[32m+[m[32m        return new Vec2(28.4f, -9.6f);[m
+     }[m
+ [m
+     @Override[m
+     public boolean isCompleted() {[m
+[31m-        return getPlayer().getCoinCount() == 11;[m
+[32m+[m[32m        return getPlayer().getCoinCount() > 20;[m
+     }[m
+[32m+[m
+         [m
+ }[m
+[1mdiff --git a/src/game/Level4.java b/src/game/Level4.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7a030c4[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/Level4.java[m
+[36m@@ -0,0 +1,69 @@[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport city.cs.engine.*;[m
+[32m+[m[32mimport java.awt.Color;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport javax.sound.sampled.LineUnavailableException;[m
+[32m+[m[32mimport javax.sound.sampled.UnsupportedAudioFileException;[m
+[32m+[m[32mimport javax.swing.Timer;[m
+[32m+[m[32mimport org.jbox2d.common.Vec2;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Level 2 of the game[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class Level4 extends GameLevel {[m
+[32m+[m
+[32m+[m[32m    private static final int NUM_ORANGES = 11;[m
+[32m+[m[41m   [m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Populate the world.[m
+[32m+[m[32m     */[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public void populate(Game game) {[m
+[32m+[m[32m        super.populate(game);[m[41m    [m
+[32m+[m
+[32m+[m
+[32m+[m[32m        // make the ground[m
+[32m+[m[32m        Shape groundShape = new BoxShape(999, 0.5f);[m
+[32m+[m[32m        Body ground = new StaticBody(this, groundShape);[m
+[32m+[m[32m        ground.setPosition(new Vec2(0, -11.5f));[m
+[32m+[m[32m        // make border[m
+[32m+[m[32m        Body sky = new StaticBody(this, groundShape);[m
+[32m+[m[32m        sky.setPosition(new Vec2(0, 15));[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        // make some platforms[m
+[32m+[m[32m        float spacing = -78.5f;[m
+[32m+[m[32m        Shape boxShape = new BoxShape(4, 0.5f);[m
+[32m+[m[32m        while (spacing<80) {[m
+[32m+[m[32m            Body platform2 = new StaticBody(this, boxShape);[m
+[32m+[m[32m            platform2.setPosition(new Vec2(spacing, -2.5f));[m
+[32m+[m[32m            platform2.addCollisionListener(new Pickup(getPlayer()));[m
+[32m+[m[32m            spacing= spacing + 20;[m
+[32m+[m[32m            platform2.setFillColor(Color.WHITE);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        for (float i = -50; i < 50; i= i+5) {[m
+[32m+[m[32m            Body coin = new Coin(this);[m
+[32m+[m[32m            coin.setPosition(new Vec2(i * 1.5f, 10));[m
+[32m+[m[32m            coin.addCollisionListener(new Pickup(getPlayer()));[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public Vec2 startPosition() {[m
+[32m+[m[32m        return new Vec2(-75, -10);[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public Vec2 goalPosition() {[m
+[32m+[m[32m        return new Vec2(0f, -9.6f);[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public boolean isCompleted() {[m
+[32m+[m[32m        return getPlayer().getCoinCount() > 0;[m
+[32m+[m[32m    }[m
+[32m+[m[41m     [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/MouseTest.java b/src/game/MouseTest.java[m
+[1mdeleted file mode 100644[m
+[1mindex ad6d10b..0000000[m
+[1m--- a/src/game/MouseTest.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,36 +0,0 @@[m
+[31m-package game;[m
+[31m-[m
+[31m-import java.awt.event.MouseEvent;[m
+[31m-import java.awt.event.MouseListener;[m
+[31m-[m
+[31m-/**[m
+[31m- * Dummy mouse listener.[m
+[31m- */[m
+[31m-public class MouseTest implements MouseListener {[m
+[31m-[m
+[31m-    @Override[m
+[31m-    public void mouseClicked(MouseEvent e) {[m
+[31m-        System.out.println("mouse clicked");[m
+[31m-    }[m
+[31m-[m
+[31m-    @Override[m
+[31m-    public void mousePressed(MouseEvent e) {[m
+[31m-        System.out.println("mouse pressed");[m
+[31m-    }[m
+[31m-[m
+[31m-    @Override[m
+[31m-    public void mouseReleased(MouseEvent e) {[m
+[31m-        System.out.println("mouse released");[m
+[31m-    }[m
+[31m-[m
+[31m-    @Override[m
+[31m-    public void mouseEntered(MouseEvent e) {[m
+[31m-        System.out.println("mouse entered");[m
+[31m-    }[m
+[31m-[m
+[31m-    @Override[m
+[31m-    public void mouseExited(MouseEvent e) {[m
+[31m-        System.out.println("mouse exited");[m
+[31m-    }[m
+[31m-   [m
+[31m-}[m
+[1mdiff --git a/src/game/MyView.java b/src/game/MyView.java[m
+[1mindex e514ba3..9c7e326 100644[m
+[1m--- a/src/game/MyView.java[m
+[1m+++ b/src/game/MyView.java[m
+[36m@@ -14,6 +14,7 @@[m [mimport city.cs.engine.World;[m
+ import java.awt.Graphics2D;[m
+ import java.awt.Image;[m
+ import javax.swing.ImageIcon;[m
+[32m+[m[32mimport org.jbox2d.common.Vec2;[m
+ [m
+ /**[m
+  *[m
+[36m@@ -40,7 +41,7 @@[m [mpublic class MyView extends UserView {[m
+         this.game = game; [m
+         [m
+     }[m
+[31m-[m
+[32m+[m[32m//TODO fix parallax scrolling[m
+     @Override[m
+     protected void paintBackground(Graphics2D g) {[m
+         //System.out.println("paintBackground");[m
+[36m@@ -67,15 +68,14 @@[m [mpublic class MyView extends UserView {[m
+                 g.drawImage(life, 15+adjust, 0, this);[m
+                 adjust = adjust+35;[m
+             }[m
+[31m-        game.getLevel();[m
+         // consider looop and count variable [m
+         g.drawString("Coins: " + bike.getCoinCount(), 0, 50);[m
+         g.drawImage(coin, 50, 33, this);[m
+         g.drawString("Bombs: " + bike.getBombCount(), 0, 80);[m
+         g.drawImage(bomb, 58, 60, this);[m
+[31m-        if (bike.getCoinCount() < 11){[m
+[31m-            for (int i=0; i<bike.getFuelTank(); i++){[m
+[31m-                count = bike.getFuelTank();[m
+[32m+[m[32m        if (game.getLevel() < 3){[m
+[32m+[m[32m            for (int i=0; i<game.getPlayer().getFuelTank(); i++){[m
+[32m+[m[32m                count = game.getPlayer().getFuelTank();[m
+                 fuel = new ImageIcon("data/fuel"+ count + ".png").getImage();[m
+                 g.drawImage(fuel, 470, 320, this);[m
+             }[m
+[1mdiff --git a/src/game/Pickup.java b/src/game/Pickup.java[m
+[1mindex 76da087..2ca0d65 100644[m
+[1m--- a/src/game/Pickup.java[m
+[1m+++ b/src/game/Pickup.java[m
+[36m@@ -24,6 +24,8 @@[m [mpublic class Pickup implements CollisionListener {[m
+                 bike.fillTank();[m
+                 e.getOtherBody().destroy();[m
+ [m
+[32m+[m[32m            } else if (e.getOtherBody() instanceof Spikes || e.getOtherBody() instanceof Blade) {[m
+[32m+[m[32m                System.out.println("Game OVER!");[m
+             } [m
+             if (e.getReportingFixture().equals(bike.getRiderFixture())[m
+                     && e.getOtherBody().getClass()!=Coin.class[m
+[36m@@ -39,7 +41,7 @@[m [mpublic class Pickup implements CollisionListener {[m
+                 e.getReportingBody().destroy();[m
+                 System.out.println("boom");[m
+ [m
+[31m-            }[m
+[32m+[m[32m        }[m[41m [m
+ [m
+     }[m
+ }[m
+[1mdiff --git a/src/game/Player.java b/src/game/Player.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dcd824e[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/Player.java[m
+[36m@@ -0,0 +1,30 @@[m
+[32m+[m[32m/*[m
+[32m+[m[32m * To change this license header, choose License Headers in Project Properties.[m
+[32m+[m[32m * To change this template file, choose Tools | Templates[m
+[32m+[m[32m * and open the template in the editor.[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m *[m
+[32m+[m[32m * @author Paul Gansca[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class Player {[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m[32m    String name;[m
+[32m+[m[32m    int score;[m
+[32m+[m[41m    [m
+[32m+[m[32m    public Player (String name, int score){[m
+[32m+[m[32m        this.name = name;[m
+[32m+[m[32m        this.score = score;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public String toString() {[m
+[32m+[m[32m        return name + ", " + score;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/PolygonEditor.java b/src/game/PolygonEditor.java[m
+[1mindex 3a7a522..07b6c2a 100644[m
+[1m--- a/src/game/PolygonEditor.java[m
+[1m+++ b/src/game/PolygonEditor.java[m
+[36m@@ -240,7 +240,7 @@[m [mpublic class PolygonEditor extends JPanel[m
+      * @param args command line arguments.[m
+      */[m
+     public static void main(String[] args) {[m
+[31m-        String fileName = "data/heart.png";[m
+[32m+[m[32m        String fileName = "data/elevator.png";[m
+         int firstCoordIndex = 0;[m
+         float boxHeight = 3.0f;[m
+         if (args.length > 0) {[m
+[1mdiff --git a/src/game/RollLeftState.java b/src/game/RollLeftState.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..75d9033[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/RollLeftState.java[m
+[36m@@ -0,0 +1,24 @@[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport fsm.FSMState;[m
+[32m+[m
+[32m+[m[32mpublic class RollLeftState extends FSMState<Blade> {[m
+[32m+[m
+[32m+[m[32m    protected void update() {[m
+[32m+[m[32m        Blade blade = getContext();[m
+[32m+[m[32m        if (blade.inRangeRight()) {[m
+[32m+[m[32m            gotoState(new RollRightState());[m
+[32m+[m[32m        } else if (!blade.inRange()) {[m
+[32m+[m[32m            gotoState(new StandStillState());[m
+[32m+[m[32m        } else {[m
+[32m+[m[32m            blade.setAngularVelocity(3);[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    protected void enter() {[m
+[32m+[m[32m        Blade blade = getContext();[m
+[32m+[m[32m        blade.setAngularVelocity(1);[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    protected void exit() {}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/game/RollRightState.java b/src/game/RollRightState.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0350344[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/RollRightState.java[m
+[36m@@ -0,0 +1,25 @@[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport fsm.FSMState;[m
+[32m+[m
+[32m+[m[32mpublic class RollRightState extends FSMState<Blade> {[m
+[32m+[m
+[32m+[m[32m    protected void update() {[m
+[32m+[m[32m        Blade blade = getContext();[m
+[32m+[m[32m        if (blade.inRangeLeft()) {[m
+[32m+[m[32m            gotoState(new RollLeftState());[m
+[32m+[m[32m        } else if (!blade.inRange()) {[m
+[32m+[m[32m            gotoState(new StandStillState());[m
+[32m+[m[32m        } else {[m
+[32m+[m[32m            blade.setAngularVelocity(-3);[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    protected void enter() {[m
+[32m+[m[32m        Blade blade = getContext();[m
+[32m+[m[32m        blade.setAngularVelocity(-1);[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    protected void exit() {}[m
+[32m+[m[32m}[m
+[32m+[m
+[1mdiff --git a/src/game/ScoreComparator.java b/src/game/ScoreComparator.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..51218ae[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/ScoreComparator.java[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32m/*[m
+[32m+[m[32m * To change this license header, choose License Headers in Project Properties.[m
+[32m+[m[32m * To change this template file, choose Tools | Templates[m
+[32m+[m[32m * and open the template in the editor.[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport java.util.Comparator;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m *[m
+[32m+[m[32m * @author Paul Gansca[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class ScoreComparator implements Comparator<Player>{[m
+[32m+[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public int compare(Player p1, Player p2) {[m
+[32m+[m[32m        return p2.score-p1.score;[m
+[32m+[m[32m    }[m
+[32m+[m[41m        [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/Sensor.java b/src/game/Sensor.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6c77002[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/Sensor.java[m
+[36m@@ -0,0 +1,14 @@[m
+[32m+[m[32m/*[m
+[32m+[m[32m * To change this license header, choose License Headers in Project Properties.[m
+[32m+[m[32m * To change this template file, choose Tools | Templates[m
+[32m+[m[32m * and open the template in the editor.[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m *[m
+[32m+[m[32m * @author Paul Gansca[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class Sensor {[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/SpawnFuel.java b/src/game/SpawnFuel.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..496eada[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/SpawnFuel.java[m
+[36m@@ -0,0 +1,27 @@[m
+[32m+[m[32m/*[m
+[32m+[m[32m * To change this license header, choose License Headers in Project Properties.[m
+[32m+[m[32m * To change this template file, choose Tools | Templates[m
+[32m+[m[32m * and open the template in the editor.[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport java.awt.event.ActionEvent;[m
+[32m+[m[32mimport java.awt.event.ActionListener;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m *[m
+[32m+[m[32m * @author Paul Gansca[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class SpawnFuel implements ActionListener{[m
+[32m+[m[41m    [m
+[32m+[m[32m    public GameLevel demo;[m
+[32m+[m[41m    [m
+[32m+[m[32m    public SpawnFuel(GameLevel demo){[m
+[32m+[m[32m        this.demo = demo;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public void actionPerformed(ActionEvent e) {[m
+[32m+[m[32m        demo.spawnFuel();[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/SpawnPlatform.java b/src/game/SpawnPlatform.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..894322d[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/SpawnPlatform.java[m
+[36m@@ -0,0 +1,34 @@[m
+[32m+[m[32m/*[m
+[32m+[m[32m * To change this license header, choose License Headers in Project Properties.[m
+[32m+[m[32m * To change this template file, choose Tools | Templates[m
+[32m+[m[32m * and open the template in the editor.[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport city.cs.engine.Body;[m
+[32m+[m[32mimport city.cs.engine.BoxShape;[m
+[32m+[m[32mimport city.cs.engine.Shape;[m
+[32m+[m[32mimport city.cs.engine.StaticBody;[m
+[32m+[m[32mimport java.awt.event.ActionEvent;[m
+[32m+[m[32mimport java.awt.event.ActionListener;[m
+[32m+[m[32mimport org.jbox2d.common.Vec2;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m *[m
+[32m+[m[32m * @author Paul Gansca[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class SpawnPlatform implements ActionListener {[m
+[32m+[m[32m    public GameLevel demo;[m
+[32m+[m[41m    [m
+[32m+[m[32m    public SpawnPlatform(GameLevel demo){[m
+[32m+[m[32m        this.demo = demo;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public void actionPerformed(ActionEvent e) {[m
+[32m+[m[32m        demo.makePlatform();[m
+[32m+[m[32m        demo.makePlatform();[m
+[32m+[m[32m        demo.makePlatform();[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/Spikes.java b/src/game/Spikes.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..57b8bfa[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/Spikes.java[m
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m/*[m
+[32m+[m[32m * To change this license header, choose License Headers in Project Properties.[m
+[32m+[m[32m * To change this template file, choose Tools | Templates[m
+[32m+[m[32m * and open the template in the editor.[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport city.cs.engine.Body;[m
+[32m+[m[32mimport city.cs.engine.BodyImage;[m
+[32m+[m[32mimport city.cs.engine.DynamicBody;[m
+[32m+[m[32mimport city.cs.engine.PolygonShape;[m
+[32m+[m[32mimport city.cs.engine.Shape;[m
+[32m+[m[32mimport city.cs.engine.SolidFixture;[m
+[32m+[m[32mimport city.cs.engine.Walker;[m
+[32m+[m[32mimport city.cs.engine.World;[m
+[32m+[m[32mimport org.jbox2d.common.Vec2;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m *[m
+[32m+[m[32m * @author Paul Gansca[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class Spikes extends Walker {[m
+[32m+[m[41m    [m
+[32m+[m[32m    private static final Shape spikes = new PolygonShape([m
+[32m+[m[32m            -2.9f,1.5f, -2.9f,-1.5f, 2.9f,-1.5f, 2.9f,1.5f);[m
+[32m+[m[41m    [m
+[32m+[m[32m    SolidFixture spikeFixture = new SolidFixture(this, spikes, 100);[m
+[32m+[m[41m    [m
+[32m+[m[32m    private static final BodyImage image =[m
+[32m+[m[32m        new BodyImage("data/spikes.png", 3f);[m
+[32m+[m[41m    [m
+[32m+[m[32m    public Spikes(World w) {[m
+[32m+[m[32m        super(w, spikes);[m
+[32m+[m[32m        addImage(image);[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[1mdiff --git a/src/game/StandStillState.java b/src/game/StandStillState.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1ea0944[m
+[1m--- /dev/null[m
+[1m+++ b/src/game/StandStillState.java[m
+[36m@@ -0,0 +1,25 @@[m
+[32m+[m[32mpackage game;[m
+[32m+[m
+[32m+[m[32mimport fsm.FSMState;[m
+[32m+[m[32mimport org.jbox2d.common.Vec2;[m
+[32m+[m
+[32m+[m[32mpublic class StandStillState extends FSMState<Blade> {[m
+[32m+[m
+[32m+[m[32m    protected void update() {[m
+[32m+[m[32m        Blade blade = getContext();[m
+[32m+[m[32m        if (blade.inRangeLeft()) {[m
+[32m+[m[32m            gotoState(new RollLeftState());[m
+[32m+[m[32m        } else if (blade.inRangeRight()) {[m
+[32m+[m[32m            gotoState(new RollRightState());[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    protected void enter() {[m
+[32m+[m[32m        Blade blade = getContext();[m
+[32m+[m[32m        blade.setAngularVelocity(0);[m
+[32m+[m[32m        blade.setLinearVelocity(new Vec2());[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    protected void exit() {[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
