@@ -78,7 +78,7 @@ public class Bike extends Walker {
     public void fuelConsumption() {
         if (fuelTank < 1){
             System.out.println("GAME OVER!");
-            //System.exit(0);
+            System.exit(0);            
         }
         fuelTank--;
         
@@ -90,7 +90,7 @@ public class Bike extends Walker {
             lifeCount--;
         } else{
             System.out.println("GAME OVER!");
-            //System.exit(0);
+            System.exit(0);
         }
     }
     

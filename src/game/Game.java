@@ -42,6 +42,7 @@ public class Game {
     private SoundClip gameMusic;
     private static SoundClip warp;
     private String username;
+    private double volume;
     
     
     /** Initialise a new Game. */
@@ -51,7 +52,7 @@ public class Game {
             username = showInputDialog(null, "Player name:");
         }
         // make the world
-              
+        volume = 0.2d;     
         level = 1;
         world = new Level1();
         world.populate(this);
@@ -132,7 +133,7 @@ public class Game {
     
     public void restart(){
         world.start();
-        if (level == 1){
+        if (level < 3){
             timer.start();
         }
     }
@@ -158,6 +159,11 @@ public class Game {
             System.out.println(e);
         }  
     }
+
+    public SoundClip getGameMusic() {
+        return gameMusic;
+    }
+    
     
     
     //advance to next level
@@ -167,14 +173,14 @@ public class Game {
         spawner.stop();
         spawnFuel.stop();
         demo.readScores();
-        System.out.println(demo.getPlayerScores().size());
+        //System.out.println(demo.getPlayerScores().size());
         Bike oldBike = world.getPlayer();
         gameMusic.stop();
         warp.play();
         switch (level) {
             case 4:
-                System.exit(0);
                 hsWriter.writeHighScore(username, world.getPlayer().getCoinCount());
+                System.exit(0);             
             case 0:
                 level++;
                 backgroundMusic();
@@ -279,7 +285,7 @@ public class Game {
         ((MyView)view).setBike(world.getPlayer());
         dropBomb.setBike(world.getPlayer());
     }
-
+    
     /** Run the game. */
     public static void main(String[] args) {
         new Game();
